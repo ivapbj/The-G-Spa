@@ -1,0 +1,40 @@
+/* Navbar adjustments for small screens */
+nav ul {
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 10px; /* Reduce the gap */
+}
+
+nav ul li {
+  font-size: 14px; /* Smaller text for menu items */
+}
+
+/* Header text size for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px; /* Adjust font size */
+  }
+
+  p {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+
+  img {
+    object-fit: cover; /* Ensure background scales well */
+  }
+}
+
+/* For very small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Further reduce font size */
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 5px;
+  }
+}
