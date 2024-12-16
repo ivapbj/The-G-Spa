@@ -21,7 +21,7 @@ const AboutUs = () => {
         style={{
           fontFamily: "'Courier', monospace", // Optional: font style
           fontSize: "48px",
-          marginTop: "-100px", // Space between top of page and text
+          marginTop: "-00px", // Space between top of page and text
           marginBottom: "40px",
           textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
         }}
