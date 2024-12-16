@@ -21,8 +21,8 @@ const AboutUs = () => {
         style={{
           fontFamily: "'Courier', monospace", // Optional: font style
           fontSize: "48px",
-          marginTop: "-50px", // Space between top of page and text
-          marginBottom: "20px",
+          marginTop: "-100px", // Space between top of page and text
+          marginBottom: "40px",
           textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
         }}
       >
@@ -47,7 +47,7 @@ const AboutUs = () => {
       <p
         style={{
           fontSize: "18px",
-          marginTop: "60px", // Space between text and image
+          marginTop: "30px", // Space between text and image
           maxWidth: "800px", // Controls the width of the paragraph
           color: "#ddd",
         }}
@@ -62,6 +62,19 @@ const AboutUs = () => {
         and selling process. Giana has taught group fitness and nutrition and
         also worked in the beauty industry. She has now combined all of her
         passions and started the G Spa for body sculpting and teeth whitening.
+        <br />
+        <br />
+        <br />
+        <br />
+        Body sculpting is a non-invasive treatment designed to contour and
+        reshape the body by targeting stubborn fat deposits and improving skin
+        tone. Through advanced techniques like EMS, radiofrequency, cavitation
+        and vacuum therapy, body sculpting helps reduce fat, smooth cellulite,
+        and tighten skin. These procedures are ideal for those looking to
+        enhance their natural curves without the need for surgery or downtime.
+        Whether you&#39;re looking to trim your waist, tone your thighs, or
+        define your abs, body sculpting can help you achieve a more sculpted,
+        youthful appearance with minimal effort and lasting results.
       </p>
     </div>
   );
