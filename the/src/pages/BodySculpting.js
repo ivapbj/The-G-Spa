@@ -2,6 +2,12 @@ import React from "react";
 import ButtImage from "../images/butt.jpeg"; // Adjust path to your image
 import AbsImage from "../images/abs.jpeg"; // Adjust path to your image
 import ThighImage from "../images/thigh.jpeg"; // Adjust path to your image
+import BA30 from "../images/BA30.jpeg"; // Adjust path to your image
+import BikiniImage from "../images/bikini.jpeg"; // Adjust path to your image
+import RedLightImage from "../images/redlight.jpeg"; // Adjust path to your image
+import SaunaImage from "../images/sauna.jpeg"; // Adjust path to your image
+import SuctionImage from "../images/suction.jpeg"; // Adjust path to your image
+import ReproductionImage from "../images/reproduction.jpeg"; // Adjust path to your image
 
 const BodySculpting = () => {
   return (
@@ -19,7 +25,6 @@ const BodySculpting = () => {
         youthful appearance with minimal effort and lasting results.
       </p>
       <h2>EMSZero</h2>
-
       <img
         src={ButtImage}
         alt="butt RF"
@@ -90,6 +95,30 @@ const BodySculpting = () => {
         You can enjoy some of our other treatment options during this procedure.
       </p>
       <h3>Cavitation</h3>
+      <img
+        src={BA30}
+        alt="before and after 30"
+        style={{
+          width: "30%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
+      <img
+        src={BikiniImage}
+        alt="before and after 30"
+        style={{
+          width: "30%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
       <p>
         Body cavitation, also known as ultrasonic cavitation, is a non-invasive
         treatment that uses low-frequency sound waves to target and break down
@@ -100,9 +129,35 @@ const BodySculpting = () => {
         texture. Body cavitation is commonly used on areas such as the abdomen,
         thighs, and lower back, providing a painless alternative to liposuction.
         The treatment is non-surgical, requires no downtime, and can result in a
-        smoother, more toned appearance with regular sessions.
-        <h4>RF</h4>
+        smoother, more toned appearance with regular sessions.{" "}
       </p>
+      <h4>RF</h4>
+      <img
+        src={SaunaImage}
+        alt="sauna"
+        style={{
+          width: "28%", // Adjust size as needed
+          maxWidth: "300px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
+
+      <img
+        src={RedLightImage}
+        alt="redlight"
+        style={{
+          width: "40%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
+      <p></p>
       <p>
         Radiofrequency (RF) therapy for the body is a non-invasive treatment
         that uses radiofrequency energy to heat the deeper layers of the skin
@@ -149,6 +204,30 @@ const BodySculpting = () => {
         alternative to enhance the buttocks without the need for implants or fat
         injections.
       </p>
+      <img
+        src={SuctionImage}
+        alt="suction pic"
+        style={{
+          width: "30%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
+      <img
+        src={ReproductionImage}
+        alt="reproduction pic"
+        style={{
+          width: "40%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
     </div>
   );
 };
