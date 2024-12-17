@@ -1,4 +1,7 @@
 import React from "react";
+import ButtImage from "../images/butt.jpeg"; // Adjust path to your image
+import AbsImage from "../images/abs.jpeg"; // Adjust path to your image
+import ThighImage from "../images/thigh.jpeg"; // Adjust path to your image
 
 const BodySculpting = () => {
   return (
@@ -16,6 +19,43 @@ const BodySculpting = () => {
         youthful appearance with minimal effort and lasting results.
       </p>
       <h2>EMSZero</h2>
+
+      <img
+        src={ButtImage}
+        alt="butt RF"
+        style={{
+          width: "30%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
+      <img
+        src={AbsImage}
+        alt="butt RF"
+        style={{
+          width: "30%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
+      <img
+        src={ThighImage}
+        alt="butt RF"
+        style={{
+          width: "30%", // Adjust size as needed
+          maxWidth: "600px", // Prevents image from getting too large
+          height: "auto",
+          borderRadius: "10px", // Optional: adds rounded corners
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
+          marginBottom: "20px", /// Space between image and text
+        }}
+      />
       <p>
         Are you ready to transform your body without the effort? Say goodbye to
         endless sit-ups, arm curls, and squats! Introducing EMSZero, the
