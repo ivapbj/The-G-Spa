@@ -46,6 +46,7 @@ const AboutUs = () => {
       {/* Content Section */}
       <p
         style={{
+          fontFamily: "'Courier', monospace",
           fontSize: "18px",
           marginTop: "30px", // Space between text and image
           maxWidth: "800px", // Controls the width of the paragraph

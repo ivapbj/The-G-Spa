@@ -8,7 +8,6 @@ const Services = () => {
       style={{
         position: "relative",
         height: "100vh",
-        // backgroundColor: "black",
         color: "white",
       }}
     >

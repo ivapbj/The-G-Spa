@@ -13,10 +13,11 @@ const ContactUs = () => {
         alignItems: "center", // Center horizontally
         textAlign: "center",
         padding: "20px",
+        fontFamily: "'Courier', monospace", // Optional: font style
       }}
     >
-      <h1 style={{ marginBottom: "20px" }}>Contact Us</h1>
-      <div style={{ lineHeight: "2" }}>
+      <h1 style={{ marginBottom: "20px", fontSize: "50px" }}>Contact Us</h1>
+      <div style={{ lineHeight: "2", fontSize: "20px" }}>
         {/* Clickable Email */}
         <p>
           Email:{" "}
@@ -24,7 +25,7 @@ const ContactUs = () => {
             href="mailto:gianaaragon@gmail.com"
             style={{
               color: "white",
-              textDecoration: "none",
+              textDecoration: " ",
             }}
           >
             gianaaragon@gmail.com
@@ -34,15 +35,7 @@ const ContactUs = () => {
         {/* Clickable Phone */}
         <p>
           Phone:
-          <a
-            href="tel:4135312171"
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-          >
-            413-531-2171
-          </a>
+          <a> 413-531-2171</a>
         </p>
 
         {/* Clickable Address */}
