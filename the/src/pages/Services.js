@@ -1,12 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link to navigate between pages
+import Logo from "../images/logo.JPG"; // Import the logo image
 
 const Services = () => {
   return (
-    <div style={{ position: "relative", height: "100vh" }}>
+    <div
+      style={{
+        position: "relative",
+        height: "100vh",
+        // backgroundColor: "black",
+        color: "white",
+      }}
+    >
       {/* Background image */}
       <img
-        src={require("../images/logo.JPG")}
+        src={Logo} // Use the imported logo image
         alt="The G Spa Logo"
         style={{
           position: "absolute",
@@ -18,12 +26,11 @@ const Services = () => {
           zIndex: -1, // Keeps it behind content
         }}
       />
-
       {/* Service buttons in the center */}
       <div
         style={{
           position: "absolute",
-          top: "57%",
+          top: "50%",
           left: "50%",
           transform: "translate(-50%, -45%)", // Centers the div
           display: "flex",
@@ -58,8 +65,8 @@ const styles = {
     color: "white",
     padding: "10px 10px",
     fontSize: "18px",
-    // border: "3px solid white", // Adding a border around the button
-    // borderRadius: "10px", // Rounded corners for the button
+    border: "3px solid white", // Adding a border around the button
+    borderRadius: "10px", // Rounded corners for the button
     cursor: "pointer",
     width: "180px",
     transition: "all 0.3s ease",
