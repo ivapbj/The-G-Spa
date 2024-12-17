@@ -11,20 +11,47 @@ import ReproductionImage from "../images/reproduction.jpeg"; // Adjust path to y
 
 const BodySculpting = () => {
   return (
-    <div style={{ paddingTop: "60px", textAlign: "center", color: "black" }}>
-      <h1>Body Sculpting</h1>
+    <div
+      style={{
+        paddingTop: "60px",
+        textAlign: "center",
+        color: "white",
+        backgroundColor: "black",
+      }}
+    >
+      <h1
+        style={{
+          fontFamily: "'Courier', monospace", // Optional: font style
+          fontSize: "48px",
+          marginTop: "-00px", // Space between top of page and text
+          marginBottom: "40px",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+        }}
+      >
+        Body Sculpting
+      </h1>
       <p>
-        Body sculpting is a non-invasive treatment designed to contour and
-        reshape the body by targeting stubborn fat deposits and improving skin
-        tone. Through advanced techniques like EMS, radiofrequency, cavitation
-        and vacuum therapy, body sculpting helps reduce fat, smooth cellulite,
-        and tighten skin. These procedures are ideal for those looking to
-        enhance their natural curves without the need for surgery or downtime.
-        Whether you&#39;re looking to trim your waist, tone your thighs, or
-        define your abs, body sculpting can help you achieve a more sculpted,
-        youthful appearance with minimal effort and lasting results.
+        Body sculpting is a non-invasive treatment desig style= reshape the body
+        by targeting stubborn fat deposits and improving skin tone. Through
+        advanced techniques like EMS, radiofrequency, cavitation and vacuum
+        therapy, body sculpting helps reduce fat, smooth cellulite, and tighten
+        skin. These procedures are ideal for those looking to enhance their
+        natural curves without the need for surgery or downtime. Whether
+        you&#39;re looking to trim your waist, tone your thighs, or define your
+        abs, body sculpting can help you achieve a more sculpted, youthful
+        appearance with minimal effort and lasting results.
       </p>
-      <h2>EMSZero</h2>
+      <h2
+        style={{
+          fontFamily: "'Courier', monospace", // Optional: font style
+          fontSize: "48px",
+          marginTop: "-00px", // Space between top of page and text
+          marginBottom: "40px",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+        }}
+      >
+        EMSZero
+      </h2>
       <img
         src={ButtImage}
         alt="butt RF"
@@ -94,7 +121,17 @@ const BodySculpting = () => {
         you remain fully clothed while you sit on the EMS seat for 30 minutes.
         You can enjoy some of our other treatment options during this procedure.
       </p>
-      <h3>Cavitation</h3>
+      <h3
+        style={{
+          fontFamily: "'Courier', monospace", // Optional: font style
+          fontSize: "48px",
+          marginTop: "-00px", // Space between top of page and text
+          marginBottom: "40px",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+        }}
+      >
+        Cavitation
+      </h3>
       <img
         src={BA30}
         alt="before and after 30"
@@ -131,7 +168,17 @@ const BodySculpting = () => {
         The treatment is non-surgical, requires no downtime, and can result in a
         smoother, more toned appearance with regular sessions.{" "}
       </p>
-      <h4>RF</h4>
+      <h4
+        style={{
+          fontFamily: "'Courier', monospace", // Optional: font style
+          fontSize: "48px",
+          marginTop: "-00px", // Space between top of page and text
+          marginBottom: "40px",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+        }}
+      >
+        RF
+      </h4>
       <img
         src={SaunaImage}
         alt="sauna"
@@ -191,7 +238,17 @@ const BodySculpting = () => {
         thighs, and arms, providing a safe and effective solution for those
         seeking non-surgical body rejuvenation.
       </p>
-      <h5>Vacuum Therapy</h5>
+      <h5
+        style={{
+          fontFamily: "'Courier', monospace", // Optional: font style
+          fontSize: "48px",
+          marginTop: "-00px", // Space between top of page and text
+          marginBottom: "40px",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+        }}
+      >
+        Vacuum Therapy
+      </h5>
       <p>
         Vacuum therapy for the buttocks is a non-invasive treatment designed to
         enhance the shape and appearance of the buttocks by using suction cups
