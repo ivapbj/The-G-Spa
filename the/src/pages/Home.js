@@ -37,7 +37,7 @@ const Home = () => {
           justifyContent: "center",
           alignItems: "center",
           gap: "20px", // Space between images
-          marginTop: "50px", // Space between header and images
+          marginTop: "20px", // Space between header and images
         }}
       >
         <img

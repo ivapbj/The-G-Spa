@@ -15,7 +15,7 @@ const Navbar = () => {
         color: "white",
         padding: "5px 20px", // Adjust padding for thicker Navbar
         position: "fixed",
-        top: -10,
+        top: -50,
         left: 8,
         right: -92,
         width: "97%",
@@ -32,7 +32,7 @@ const Navbar = () => {
         src={require("../images/logo.JPG")}
         alt="The G Spa Logo"
         style={{
-          maxWidth: "10%", // Ensure the image does not exceed 20% of the screen width
+          maxWidth: "15%", // Ensure the image does not exceed 20% of the screen width
           height: "auto", // Maintain aspect ratio
           objectFit: "contain", // Ensure the image scales properly within its container
         }}
