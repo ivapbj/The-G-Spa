@@ -20,7 +20,7 @@ const VacuumTherapy = () => {
           textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
         }}
       >
-        Radio Frequency
+        Vacuum Therapy
       </h2>
       <img
         src={SuctionImage}
