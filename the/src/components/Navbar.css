@@ -1,29 +1,7 @@
-/* Navbar.css */
+/* Navbar.css
 .navbar {
   position: fixed; /* Makes it float at the top */
-  top: 0;
+  /* top: 0;
   width: 100%;
   background-color: #101010; /* Dark background */
-  padding: 10px 20px;
-  z-index: 1000; /* Ensures it stays above other content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.998);
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-around; /* Space out the links */
-  align-items: center;
-}
-
-.nav-link {
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-family: "'Courier', monospace";
-  font-size: 32px;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.nav-link:hover {
-  color: #00c1a7;
-}
+  /* /

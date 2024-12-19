@@ -13,22 +13,39 @@ const Navbar = () => {
       style={{
         backgroundColor: "black",
         color: "white",
-        padding: "10px 20px",
+        padding: "5px 20px", // Adjust padding for thicker Navbar
         position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100%",
+        top: -10,
+        left: 8,
+        right: -92,
+        width: "97%",
         zIndex: 1000,
+        fontFamily: "'Courier', monospace",
+        fontSize: "20px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-around", // Space out the logo and navigation
+        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.5)", // Add slight shadow for depth
       }}
     >
+      <img
+        src={require("../images/logo.JPG")}
+        alt="The G Spa Logo"
+        style={{
+          maxWidth: "10%", // Ensure the image does not exceed 20% of the screen width
+          height: "auto", // Maintain aspect ratio
+          objectFit: "contain", // Ensure the image scales properly within its container
+        }}
+      />
+      {/* Navigation Links */}
       <ul
         style={{
           display: "flex",
           listStyle: "none",
-          justifyContent: "space-around",
-          alignItems: "center",
           margin: 0,
           padding: 0,
+          gap: "30px", // Space between links
+          textAlign: "center",
         }}
       >
         <li>
@@ -53,8 +70,8 @@ const Navbar = () => {
                 listStyle: "none",
                 padding: "10px 0",
                 margin: 0,
-                // border: "1px solid white",
                 borderRadius: "5px",
+                boxShadow: "0px 4px 8px rgba(255, 255, 255, 0.2)", // Add shadow to dropdown
               }}
             >
               <li style={{ padding: "10px 20px" }}>
@@ -101,10 +118,16 @@ const styles = {
     textDecoration: "none",
     color: "white",
     padding: "5px 10px",
+    fontWeight: "bold",
   },
   dropdownLink: {
     textDecoration: "none",
     color: "white",
+    display: "block", // Ensure dropdown links span the full width
+  },
+  logoContainer: {
+    display: "flex",
+    alignItems: "center",
   },
 };
 
