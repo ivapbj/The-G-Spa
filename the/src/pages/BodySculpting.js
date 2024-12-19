@@ -1,290 +1,216 @@
-import React from "react";
-import ButtImage from "../images/butt.jpeg"; // Adjust path to your image
-import AbsImage from "../images/abs.jpeg"; // Adjust path to your image
-import ThighImage from "../images/thigh.jpeg"; // Adjust path to your image
-import BA30 from "../images/BA30.jpeg"; // Adjust path to your image
-import BikiniImage from "../images/bikini.jpeg"; // Adjust path to your image
-import RedLightImage from "../images/redlight.jpeg"; // Adjust path to your image
-import SaunaImage from "../images/sauna.jpeg"; // Adjust path to your image
-import SuctionImage from "../images/suction.jpeg"; // Adjust path to your image
-import ReproductionImage from "../images/reproduction.jpeg"; // Adjust path to your image
+import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
+import BA from "../images/BA.jpeg"; // Adjust path to your image
 
 const BodySculpting = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleDropdown = () => {
+    setShowDropdown((prev) => !prev); // Toggles dropdown visibility
+  };
+
   return (
     <div
       style={{
-        paddingTop: "60px",
-        textAlign: "center",
-        color: "white",
         backgroundColor: "black",
+        color: "white",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        textAlign: "center",
+        padding: "20px",
       }}
     >
-      <h1
+      {/* Left Section: Body Sculpting */}
+      <div
         style={{
-          fontFamily: "'Courier', monospace", // Optional: font style
-          fontSize: "48px",
-          marginTop: "-00px", // Space between top of page and text
-          marginBottom: "40px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+          flex: "1",
+          padding: "20px",
+          textAlign: "center",
         }}
       >
-        Body Sculpting
-      </h1>
-      <p>
-        Body sculpting is a non-invasive treatment desig style= reshape the body
-        by targeting stubborn fat deposits and improving skin tone. Through
-        advanced techniques like EMS, radiofrequency, cavitation and vacuum
-        therapy, body sculpting helps reduce fat, smooth cellulite, and tighten
-        skin. These procedures are ideal for those looking to enhance their
-        natural curves without the need for surgery or downtime. Whether
-        you&#39;re looking to trim your waist, tone your thighs, or define your
-        abs, body sculpting can help you achieve a more sculpted, youthful
-        appearance with minimal effort and lasting results.
-      </p>
-      <h2
-        style={{
-          fontFamily: "'Courier', monospace", // Optional: font style
-          fontSize: "48px",
-          marginTop: "-00px", // Space between top of page and text
-          marginBottom: "40px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
-        }}
-      >
-        EMSZero
-      </h2>
-      <img
-        src={ButtImage}
-        alt="butt RF"
-        style={{
-          width: "30%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
-      <img
-        src={AbsImage}
-        alt="butt RF"
-        style={{
-          width: "30%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
-      <img
-        src={ThighImage}
-        alt="butt RF"
-        style={{
-          width: "30%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
-      <p>
-        Are you ready to transform your body without the effort? Say goodbye to
-        endless sit-ups, arm curls, and squats! Introducing EMSZero, the
-        revolutionary non-invasive solution designed to activate muscles and
-        reduce fat effortlessly. With LipoMax Sculpt, you can achieve the
-        equivalent of 20,000 sit-ups, arm curls, or squats during your lunch
-        break! Experience a sculpted, toned body with minimal effort and maximum
-        results. Book your session now and start your transformation journey
-        today! Why Choose Our EMSZero? ✨ Specialized Treatments: Target
-        stubborn areas ✨ Precision Shaping: Sculpt and tone your body without
-        the work! ✨ Personalized Sessions: Tailored to your unique body type
-        and goals for guaranteed results. EMSZero is an advanced electromagnetic
-        muscle stimulation (EMS) device designed to enhance physical fitness,
-        rehabilitation, and overall muscle health. By emitting targeted
-        electromagnetic pulses, it stimulates muscle fibers, triggering
-        contractions that improve strength, tone, and endurance. The device is
-        commonly used for muscle recovery, pain relief, and to help increase
-        muscle mass without the need for strenuous exercise. It can also be
-        beneficial in rehabilitation settings, helping users recover from
-        injuries or surgeries by promoting blood flow and reducing muscle
-        atrophy. Basically build muscle and burn fat in 30mins without breaking
-        a sweat. 30 minutes equals 20,000 sit ups and 20,000 squats. You can
-        have treatment done on your arms, abs, lower back, butt, thighs,
-        hamstrings, quadriceps and calves. EMSPelvic is a non-invasive seat that
-        uses electromagnetic waves to stimulate pelvic floor muscles. The chair
-        is used to treat urinary incontinence caused by weakened pelvic floor
-        muscles and postpartum recovery. During a 30 minute session, the seat
-        generates thousands of pelvic floor muscle contractions, which is
-        equivalent to doing about 11,000 Kegel exercises. Most people need six
-        sessions over three weeks to see optimal results. During the procedure,
-        you remain fully clothed while you sit on the EMS seat for 30 minutes.
-        You can enjoy some of our other treatment options during this procedure.
-      </p>
-      <h3
-        style={{
-          fontFamily: "'Courier', monospace", // Optional: font style
-          fontSize: "48px",
-          marginTop: "-00px", // Space between top of page and text
-          marginBottom: "40px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
-        }}
-      >
-        Cavitation
-      </h3>
-      <img
-        src={BA30}
-        alt="before and after 30"
-        style={{
-          width: "30%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
-      <img
-        src={BikiniImage}
-        alt="before and after 30"
-        style={{
-          width: "30%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
-      <p>
-        Body cavitation, also known as ultrasonic cavitation, is a non-invasive
-        treatment that uses low-frequency sound waves to target and break down
-        fat cells beneath the skin. The sound waves create microscopic bubbles
-        in the fat tissues, causing them to collapse and release their contents,
-        which are then naturally eliminated by the body’s lymphatic system. This
-        process helps reduce localized fat, contour the body, and improve skin
-        texture. Body cavitation is commonly used on areas such as the abdomen,
-        thighs, and lower back, providing a painless alternative to liposuction.
-        The treatment is non-surgical, requires no downtime, and can result in a
-        smoother, more toned appearance with regular sessions.{" "}
-      </p>
-      <h4
-        style={{
-          fontFamily: "'Courier', monospace", // Optional: font style
-          fontSize: "48px",
-          marginTop: "-00px", // Space between top of page and text
-          marginBottom: "40px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
-        }}
-      >
-        RF
-      </h4>
-      <img
-        src={SaunaImage}
-        alt="sauna"
-        style={{
-          width: "28%", // Adjust size as needed
-          maxWidth: "300px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
+        <h1
+          style={{
+            fontFamily: "'Courier', monospace",
+            fontSize: "3rem",
+            margin: "20px 0",
+            textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
+          }}
+        >
+          Body Sculpting
+        </h1>
+        <p
+          style={{
+            fontFamily: "'Courier', monospace",
+            fontSize: "1.2rem",
+            marginTop: "20px",
+            maxWidth: "800px",
+            lineHeight: "1.8",
+            textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
+          }}
+        >
+          Body sculpting is a non-invasive treatment designed to reshape the
+          body by targeting stubborn fat deposits and improving skin tone.
+          Through advanced techniques like EMS, radiofrequency, cavitation, and
+          vacuum therapy, body sculpting helps reduce fat, smooth cellulite, and
+          tighten skin. These procedures are ideal for those looking to enhance
+          their natural curves without the need for surgery or downtime.
+        </p>
+        <img
+          src={BA}
+          alt="Before and after body sculpting"
+          style={{
+            width: "90%",
+            maxWidth: "600px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)",
+            marginTop: "20px",
+          }}
+        />
+      </div>
 
-      <img
-        src={RedLightImage}
-        alt="redlight"
+      {/* Right Section: Choose One of My Specialties */}
+      <div
         style={{
-          width: "40%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
-      <p></p>
-      <p>
-        Radiofrequency (RF) therapy for the body is a non-invasive treatment
-        that uses radiofrequency energy to heat the deeper layers of the skin
-        and underlying tissues. This heat stimulates collagen production,
-        improves skin elasticity, and promotes tissue tightening. RF therapy is
-        commonly used for body contouring, reducing the appearance of cellulite,
-        and tightening loose or sagging skin. It can also enhance skin texture,
-        reduce stubborn fat pockets, and improve overall skin tone. The
-        treatment is painless, requires no downtime, and is suitable for various
-        areas of the body, including the abdomen, thighs, and arms, providing a
-        safe and effective solution for those seeking non-surgical body
-        rejuvenation. Radiofrequency (RF) therapy for the body is a non-invasive
-        treatment that uses radiofrequency energy to heat the deeper layers of
-        the skin and underlying tissues. This heat stimulates collagen
-        production, improves skin elasticity, and promotes tissue tightening. RF
-        therapy is commonly used for body contouring, reducing the appearance of
-        cellulite, and tightening loose or sagging skin. It can also enhance
-        skin texture, reduce stubborn fat pockets, and improve overall skin
-        tone. The treatment is painless, requires no downtime, and is suitable
-        for various areas of the body, including the abdomen, thighs, and arms,
-        providing a safe and effective solution for those seeking non-surgical
-        body rejuvenation. Radiofrequency (RF) therapy for the body is a
-        non-invasive treatment that uses radiofrequency energy to heat the
-        deeper layers of the skin and underlying tissues. This heat stimulates
-        collagen production, improves skin elasticity, and promotes tissue
-        tightening. RF therapy is commonly used for body contouring, reducing
-        the appearance of cellulite, and tightening loose or sagging skin. It
-        can also enhance skin texture, reduce stubborn fat pockets, and improve
-        overall skin tone. The treatment is painless, requires no downtime, and
-        is suitable for various areas of the body, including the abdomen,
-        thighs, and arms, providing a safe and effective solution for those
-        seeking non-surgical body rejuvenation.
-      </p>
-      <h5
-        style={{
-          fontFamily: "'Courier', monospace", // Optional: font style
-          fontSize: "48px",
-          marginTop: "-00px", // Space between top of page and text
-          marginBottom: "40px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+          flex: "1",
+          padding: "20px",
+          textAlign: "center",
         }}
       >
-        Vacuum Therapy
-      </h5>
-      <p>
-        Vacuum therapy for the buttocks is a non-invasive treatment designed to
-        enhance the shape and appearance of the buttocks by using suction cups
-        or devices to stimulate blood flow, increase circulation, and promote
-        lymphatic drainage. This process helps to lift, firm, and contour the
-        buttocks by encouraging the production of collagen and elastin,
-        improving skin elasticity, and reducing the appearance of cellulite. The
-        treatment is pain-free, requires no downtime, and can provide gradual,
-        natural-looking results. Vacuum therapy is often used as a non-surgical
-        alternative to enhance the buttocks without the need for implants or fat
-        injections.
-      </p>
-      <img
-        src={SuctionImage}
-        alt="suction pic"
-        style={{
-          width: "30%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
-      <img
-        src={ReproductionImage}
-        alt="reproduction pic"
-        style={{
-          width: "40%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
-          height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
-        }}
-      />
+        <h2
+          style={{
+            fontFamily: "'Courier', monospace",
+            fontSize: "2rem",
+            marginTop: "30px",
+            textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
+          }}
+        >
+          CHOOSE ONE OF MY SPECIALTIES
+        </h2>
+        <button
+          onClick={handleDropdown}
+          style={{
+            backgroundColor: "white",
+            color: "black",
+            padding: "10px 20px",
+            fontSize: "18px",
+            border: "2px solid black",
+            borderRadius: "20px", // Rounded edges
+            cursor: "pointer",
+            marginTop: "20px",
+            transition: "all 0.3s ease",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          }}
+        >
+          Select Specialties
+        </button>
+        {showDropdown && (
+          <div
+            style={{
+              marginTop: "10px",
+              backgroundColor: "white",
+              color: "black",
+              padding: "10px",
+              borderRadius: "10px",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+              width: "250px",
+              textAlign: "left",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
+            <ul style={{ listStyleType: "none", padding: "0", margin: "0" }}>
+              <li
+                style={{
+                  padding: "10px",
+                  cursor: "pointer",
+                  borderBottom: "1px solid #ddd",
+                }}
+              >
+                <Link
+                  to="/emzero"
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  EMZero
+                </Link>
+              </li>
+              <li
+                style={{
+                  padding: "10px",
+                  cursor: "pointer",
+                  borderBottom: "1px solid #ddd",
+                }}
+              >
+                <Link
+                  to="/emspelvic"
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  EMSPelvic
+                </Link>
+              </li>
+              <li
+                style={{
+                  padding: "10px",
+                  cursor: "pointer",
+                  borderBottom: "1px solid #ddd",
+                }}
+              >
+                <Link
+                  to="/cavitation"
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  Cavitation
+                </Link>
+              </li>
+              <li
+                style={{
+                  padding: "10px",
+                  cursor: "pointer",
+                  borderBottom: "1px solid #ddd",
+                }}
+              >
+                <Link
+                  to="/radio-frequency"
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  Radio Frequency
+                </Link>
+              </li>
+              <li
+                style={{
+                  padding: "10px",
+                  cursor: "pointer",
+                }}
+              >
+                <Link
+                  to="/vacuum-therapy"
+                  style={{
+                    textDecoration: "none",
+                    color: "black",
+                  }}
+                >
+                  Vacuum Therapy
+                </Link>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
