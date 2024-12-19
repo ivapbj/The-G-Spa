@@ -25,11 +25,11 @@ function App() {
         <Route path="/services/addonservices" element={<AddonServices />} />
 
         <Route path="/services/body-sculpting" element={<BodySculpting />} />
-        <Route path="/services/body-scultping/emszero" element={<EmsZero />} />
-        <Route path="/services/emspelvic" element={<EmsPelvic />} />
-        <Route path="/services/cavitation" element={<Cavitation />} />
-        <Route path="/services/radio-frequency" element={<RadioFrequency />} />
-        <Route path="/services/vacuum-therapy" element={<VacuumTherapy />} />
+        <Route path="/emszero" element={<EmsZero />} />
+        <Route path="/emspelvic" element={<EmsPelvic />} />
+        <Route path="/cavitation" element={<Cavitation />} />
+        <Route path="/radio-frequency" element={<RadioFrequency />} />
+        <Route path="/vacuum-therapy" element={<VacuumTherapy />} />
       </Routes>
     </Router>
   );

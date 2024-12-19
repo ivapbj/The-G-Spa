@@ -1,11 +1,17 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import for navigation
 import BA from "../images/BA.jpeg"; // Adjust path to your image
 
 const BodySculpting = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const navigate = useNavigate(); // Hook for navigation
 
   const handleDropdown = () => {
     setShowDropdown((prev) => !prev); // Toggles dropdown visibility
+  };
+
+  const handleNavigation = (path) => {
+    navigate(path); // Navigate to the selected page
   };
 
   return (
@@ -48,7 +54,6 @@ const BodySculpting = () => {
             fontSize: "1.2rem",
             marginTop: "30px", // Space between text and image
             marginLeft: "-100px",
-
             maxWidth: "800px",
             lineHeight: "1.8",
             textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
@@ -88,7 +93,7 @@ const BodySculpting = () => {
           style={{
             fontFamily: "'Courier', monospace",
             fontSize: "2rem",
-            marginTop: "-20px",
+            marginTop: "-200px",
             textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
           }}
         >
@@ -128,22 +133,22 @@ const BodySculpting = () => {
           >
             <ul style={{ listStyleType: "none", padding: "0", margin: "0" }}>
               {[
-                "EMZero",
-                "EMSPelvic",
-                "Cavitation",
-                "Radio Frequency",
-                "Vacuum Therapy",
+                { name: "EMSZero", path: "/emszero" },
+                { name: "EMSPelvic", path: "/emspelvic" },
+                { name: "Cavitation", path: "/cavitation" },
+                { name: "Radio Frequency", path: "/radio-frequency" },
+                { name: "Vacuum Therapy", path: "/vacuum-therapy" },
               ].map((item) => (
                 <li
-                  key={item}
+                  key={item.name}
                   style={{
                     padding: "10px",
                     cursor: "pointer",
                     borderBottom: "1px solid #ddd",
                   }}
-                  onClick={() => alert(`You selected ${item}`)} // Replace with actual functionality
+                  onClick={() => handleNavigation(item.path)} // Navigate to specific page
                 >
-                  {item}
+                  {item.name}
                 </li>
               ))}
             </ul>
