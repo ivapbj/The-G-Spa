@@ -13,9 +13,9 @@ const Navbar = () => {
       style={{
         backgroundColor: "black",
         color: "white",
-        padding: "5px 20px", // Adjust padding for thicker Navbar
+        padding: "0px 20px", // Adjust padding for thicker Navbar
         position: "fixed",
-        top: -50,
+        top: -40,
         left: 8,
         right: -92,
         width: "97%",

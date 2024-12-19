@@ -1,7 +1,7 @@
 import React from "react";
-import ButtImage from "../images/butt.jpeg"; // Adjust path to your image
-import AbsImage from "../images/abs.jpeg"; // Adjust path to your image
-import ThighImage from "../images/thigh.jpeg"; // Adjust path to your image
+// import ButtImage from "../images/butt.jpeg"; // Adjust path to your image
+// import AbsImage from "../images/abs.jpeg"; // Adjust path to your image
+// import ThighImage from "../images/thigh.jpeg"; // Adjust path to your image
 
 const RadioFrequency = () => {
   //   return (

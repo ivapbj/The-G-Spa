@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import BA from "../images/BA.jpeg"; // Adjust path to your image
 
 const BodySculpting = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -9,23 +9,74 @@ const BodySculpting = () => {
   };
 
   return (
-    (
+    <div
+      style={{
+        backgroundColor: "black",
+        color: "white",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        textAlign: "center",
+        padding: "20px",
+        marginTop: "100px", // Ensures content starts below the navbar
+      }}
+    >
+      {/* Left Section: Body Sculpting */}
       <div
         style={{
-          backgroundColor: "black",
-          color: "white",
-          minHeight: "100vh",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          alignItems: "center",
+          flex: "1",
+          padding: "150px",
           textAlign: "center",
-          padding: "20px",
         }}
-      ></div>
-    ),
-    (
-      // Right Section: Choose One of My Specialties
+      >
+        <h1
+          style={{
+            fontFamily: "'Courier', monospace",
+            fontSize: "3rem",
+            margin: "20px 0",
+            marginLeft: "-120px",
+            textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
+          }}
+        >
+          Body Sculpting
+        </h1>
+        <p
+          style={{
+            fontFamily: "'Courier', monospace",
+            fontSize: "1.2rem",
+            marginTop: "30px", // Space between text and image
+            marginLeft: "-100px",
+
+            maxWidth: "800px",
+            lineHeight: "1.8",
+            textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
+          }}
+        >
+          Body sculpting is a non-invasive treatment designed to reshape the
+          body by targeting stubborn fat deposits and improving skin tone.
+          Through advanced techniques like EMS, radiofrequency, cavitation, and
+          vacuum therapy, body sculpting helps reduce fat, smooth cellulite, and
+          tighten skin. These procedures are ideal for those looking to enhance
+          their natural curves without the need for surgery or downtime.
+        </p>
+        <img
+          src={BA}
+          alt="Before and after body sculpting"
+          style={{
+            width: "50%",
+            maxWidth: "500px",
+            height: "auto",
+            borderRadius: "10px",
+            boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)",
+            marginLeft: "-100px",
+            marginTop: "20px",
+          }}
+        />
+      </div>
+
+      {/* Right Section: Choose One of My Specialties */}
       <div
         style={{
           flex: "1",
@@ -37,7 +88,7 @@ const BodySculpting = () => {
           style={{
             fontFamily: "'Courier', monospace",
             fontSize: "2rem",
-            marginTop: "30px",
+            marginTop: "-20px",
             textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
           }}
         >
@@ -76,95 +127,30 @@ const BodySculpting = () => {
             }}
           >
             <ul style={{ listStyleType: "none", padding: "0", margin: "0" }}>
-              <li
-                style={{
-                  padding: "10px",
-                  cursor: "pointer",
-                  borderBottom: "1px solid #ddd",
-                }}
-              >
-                <Link
-                  to="/emzero"
+              {[
+                "EMZero",
+                "EMSPelvic",
+                "Cavitation",
+                "Radio Frequency",
+                "Vacuum Therapy",
+              ].map((item) => (
+                <li
+                  key={item}
                   style={{
-                    textDecoration: "none",
-                    color: "black",
+                    padding: "10px",
+                    cursor: "pointer",
+                    borderBottom: "1px solid #ddd",
                   }}
+                  onClick={() => alert(`You selected ${item}`)} // Replace with actual functionality
                 >
-                  EMZero
-                </Link>
-              </li>
-              <li
-                style={{
-                  padding: "10px",
-                  cursor: "pointer",
-                  borderBottom: "1px solid #ddd",
-                }}
-              >
-                <Link
-                  to="/emspelvic"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  EMSPelvic
-                </Link>
-              </li>
-              <li
-                style={{
-                  padding: "10px",
-                  cursor: "pointer",
-                  borderBottom: "1px solid #ddd",
-                }}
-              >
-                <Link
-                  to="/cavitation"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Cavitation
-                </Link>
-              </li>
-              <li
-                style={{
-                  padding: "10px",
-                  cursor: "pointer",
-                  borderBottom: "1px solid #ddd",
-                }}
-              >
-                <Link
-                  to="/radio-frequency"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Radio Frequency
-                </Link>
-              </li>
-              <li
-                style={{
-                  padding: "10px",
-                  cursor: "pointer",
-                }}
-              >
-                <Link
-                  to="/vacuum-therapy"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Vacuum Therapy
-                </Link>
-              </li>
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
         )}
       </div>
-    )
+    </div>
   );
 };
 
