@@ -22,7 +22,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/smile-perfected" element={<SmilePerfected />} />
-        <Route path="/services/addon-services" element={<AddonServices />} />
+        <Route path="/services/add-on-services" element={<AddonServices />} />
 
         <Route path="/services/body-sculpting" element={<BodySculpting />} />
         <Route path="/emszero" element={<EmsZero />} />

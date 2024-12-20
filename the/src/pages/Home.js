@@ -21,7 +21,7 @@ const Home = () => {
       {/* Centered Header */}
       <h1
         style={{
-          fontFamily: "'Courier', monospace",
+          fontFamily: "initial", // Optional: font style
           fontSize: "2rem",
           marginTop: "20px", // Adjust as needed
           textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",

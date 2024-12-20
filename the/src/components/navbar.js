@@ -21,7 +21,7 @@ const Navbar = () => {
         width: "97%",
         zIndex: 1000,
         fontFamily: "'Courier', monospace",
-        fontSize: "20px",
+        fontSize: "30px",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-around", // Space out the logo and navigation
