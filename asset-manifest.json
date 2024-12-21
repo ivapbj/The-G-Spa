@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://the-gspa.com/static/css/main.efa97723.css",
-    "main.js": "https://the-gspa.com/static/js/main.81fb6df1.js",
+    "main.css": "https://the-gspa.com/static/css/main.576186de.css",
+    "main.js": "https://the-gspa.com/static/js/main.aeceb671.js",
     "static/media/BA.jpeg": "https://the-gspa.com/static/media/BA.728e7e5bc5268314423f.jpeg",
     "static/media/suction.jpeg": "https://the-gspa.com/static/media/suction.bc6de746a73d1ee3d681.jpeg",
     "static/media/aboutusimage.jpg": "https://the-gspa.com/static/media/aboutusimage.5bfda9faf6df6875611c.jpg",
@@ -17,11 +17,11 @@
     "static/media/AfterSmile.JPEG": "https://the-gspa.com/static/media/AfterSmile.ef0c8b9035e8f55306f3.JPEG",
     "static/media/BeforeSmile.JPEG": "https://the-gspa.com/static/media/BeforeSmile.a76a9fe6ec2c7ef9ade8.JPEG",
     "index.html": "https://the-gspa.com/index.html",
-    "main.efa97723.css.map": "https://the-gspa.com/static/css/main.efa97723.css.map",
-    "main.81fb6df1.js.map": "https://the-gspa.com/static/js/main.81fb6df1.js.map"
+    "main.576186de.css.map": "https://the-gspa.com/static/css/main.576186de.css.map",
+    "main.aeceb671.js.map": "https://the-gspa.com/static/js/main.aeceb671.js.map"
   },
   "entrypoints": [
-    "static/css/main.efa97723.css",
-    "static/js/main.81fb6df1.js"
+    "static/css/main.576186de.css",
+    "static/js/main.aeceb671.js"
   ]
 }
