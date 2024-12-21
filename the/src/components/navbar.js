@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../components/Navbar.css"; // Make sure this path is correct for your project structure
+import "../components/Navbar.css";
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+  const handleDropdown = () => {
+    setShowDropdown(!showDropdown); // Toggle dropdown visibility
   };
 
   return (
@@ -14,33 +14,48 @@ const Navbar = () => {
       <img
         src={require("../images/newlogo.jpg")}
         alt="The G Spa Logo"
-        className="logo"
+        className="navbar-logo"
       />
-      <div className="hamburger" onClick={toggleMobileMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
-      <ul
-        className={`navLinks ${isMobileMenuOpen ? "mobileNavLinksOpen" : ""}`}
-      >
+      {/* Navigation Links */}
+      <ul className="navbar-links">
         <li>
-          <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link to="/" className="navbar-link">
             Home
           </Link>
         </li>
-        <li>
-          <Link to="/services" onClick={() => setIsMobileMenuOpen(false)}>
-            Services
-          </Link>
+        <li
+          className="dropdown"
+          onMouseEnter={handleDropdown}
+          onMouseLeave={handleDropdown}
+        >
+          <span className="navbar-link">Services</span>
+          {showDropdown && (
+            <ul className="dropdown-list">
+              <li>
+                <Link to="/services/body-sculpting" className="dropdown-item">
+                  Body Sculpting
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/smile-perfected" className="dropdown-item">
+                  Smile Perfected
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/add-on-services" className="dropdown-item">
+                  Add-On Services
+                </Link>
+              </li>
+            </ul>
+          )}
         </li>
         <li>
-          <Link to="/contact-us" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link to="/contact-us" className="navbar-link">
             Contact Us
           </Link>
         </li>
         <li>
-          <Link to="/about-us" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link to="/about-us" className="navbar-link">
             About Us
           </Link>
         </li>

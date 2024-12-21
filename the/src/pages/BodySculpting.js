@@ -26,7 +26,7 @@ const BodySculpting = () => {
         alignItems: "center",
         textAlign: "center",
         padding: "20px",
-        marginTop: "100px", // Ensures content starts below the navbar
+        marginTop: "00px", // Ensures content starts below the navbar
       }}
     >
       {/* Left Section: Body Sculpting */}

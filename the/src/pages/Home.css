@@ -1,0 +1,57 @@
+/* Home Page Container */
+.home-container {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 0px; /* Adjust to ensure navbar doesn't cover the header */
+}
+
+/* Header text styling */
+.header-text {
+  font-family: initial; /* Optional: font style */
+  font-size: 2rem;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Image container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between images */
+  margin-top: 20px; /* Space between header and images */
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+/* Image styling */
+.image {
+  width: 100%;
+  max-width: 400px; /* Maximum width for desktop */
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid black;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .header-text {
+    font-size: 1.5rem; /* Adjust header font size on smaller screens */
+  }
+
+  .image-container {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+    gap: 10px; /* Reduce gap between images */
+  }
+
+  .image {
+    max-width: 90%; /* Make images responsive on smaller screens */
+  }
+}
