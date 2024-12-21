@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link to navigate between pages
-import Logo from "../images/logo.JPG"; // Import the logo image
+import NewLogo from "../images/newlogo.jpg"; // Import the logo image
 
 const Services = () => {
   return (
@@ -13,7 +13,7 @@ const Services = () => {
     >
       {/* Background image */}
       <img
-        src={Logo} // Use the imported logo image
+        src={NewLogo} // Use the imported logo image
         alt="The G Spa Logo"
         style={{
           position: "absolute",

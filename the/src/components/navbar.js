@@ -29,12 +29,13 @@ const Navbar = () => {
       }}
     >
       <img
-        src={require("../images/logo.JPG")}
+        src={require("../images/newlogo.jpg")}
         alt="The G Spa Logo"
         style={{
           maxWidth: "15%", // Ensure the image does not exceed 20% of the screen width
           height: "auto", // Maintain aspect ratio
           objectFit: "contain", // Ensure the image scales properly within its container
+          marginTop: "30px", // Adjust margin for thicker Navbar
         }}
       />
       {/* Navigation Links */}
