@@ -1,5 +1,5 @@
 import React from "react";
-import SuctionImage from "../images/suction.jpeg"; // Adjust path to your image
+import RadioFrequencyImage from "../images/Radiofrequency.jpeg"; // Adjust path to your image
 
 const RadioFrequency = () => {
   return (
@@ -23,7 +23,7 @@ const RadioFrequency = () => {
         Radio Frequency
       </h2>
       <img
-        src={SuctionImage}
+        src={RadioFrequencyImage}
         alt="before and after 30"
         style={{
           width: "30%", // Adjust size as needed
@@ -64,17 +64,7 @@ const RadioFrequency = () => {
         tone. The treatment is painless, requires no downtime, and is suitable
         for various areas of the body, including the abdomen, thighs, and arms,
         providing a safe and effective solution for those seeking non-surgical
-        body rejuvenation. Radiofrequency (RF) therapy for the body is a
-        non-invasive treatment that uses radiofrequency energy to heat the
-        deeper layers of the skin and underlying tissues. This heat stimulates
-        collagen production, improves skin elasticity, and promotes tissue
-        tightening. RF therapy is commonly used for body contouring, reducing
-        the appearance of cellulite, and tightening loose or sagging skin. It
-        can also enhance skin texture, reduce stubborn fat pockets, and improve
-        overall skin tone. The treatment is painless, requires no downtime, and
-        is suitable for various areas of the body, including the abdomen,
-        thighs, and arms, providing a safe and effective solution for those
-        seeking non-surgical body rejuvenation.
+        body rejuvenation.
       </p>
       {/* BOOK NOW Button */}
       <button

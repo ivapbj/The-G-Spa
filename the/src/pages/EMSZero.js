@@ -71,13 +71,7 @@ const EmsZero = () => {
         equivalent of 20,000 sit-ups, arm curls, or squats during your lunch
         break! Experience a sculpted, toned body with minimal effort and maximum
         results. Book your session now and start your transformation journey
-        today! Why Choose Our EMSZero?
-        <br />
-        ✨ Specialized Treatments: Target stubborn areas
-        <br />
-        ✨ Precision Shaping: Sculpt and tone your body without the work!
-        <br />✨ Personalized Sessions: Tailored to your unique body type and
-        goals for guaranteed results.
+        today!
       </p>
 
       {/* BOOK NOW Button */}

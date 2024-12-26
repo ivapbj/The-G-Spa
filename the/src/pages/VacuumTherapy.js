@@ -1,5 +1,5 @@
 import React from "react";
-import SuctionImage from "../images/suction.jpeg"; // Adjust path to your image
+import Suction2Image from "../images/suction2.jpeg"; // Adjust path to your image
 
 const VacuumTherapy = () => {
   return (
@@ -23,7 +23,7 @@ const VacuumTherapy = () => {
         Vacuum Therapy
       </h2>
       <img
-        src={SuctionImage}
+        src={Suction2Image}
         alt="before and after 30"
         style={{
           width: "30%", // Adjust size as needed

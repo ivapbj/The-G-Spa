@@ -1,5 +1,5 @@
 import React from "react";
-import BikiniImage from "../images/bikini.jpeg"; // Adjust path to your image
+import CavitationImage from "../images/cavitation.jpeg"; // Adjust path to your image
 
 const Cavitation = () => {
   return (
@@ -23,7 +23,7 @@ const Cavitation = () => {
         Cavitation
       </h2>
       <img
-        src={BikiniImage}
+        src={CavitationImage}
         alt="before and after 30"
         style={{
           width: "30%", // Adjust size as needed
