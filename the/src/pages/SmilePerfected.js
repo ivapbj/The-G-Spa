@@ -12,22 +12,30 @@ const SmilePerfected = () => {
         backgroundColor: "black",
       }}
     >
-      <h2
+      <h1
         style={{
-          fontFamily: "'Courier', monospace",
+          fontFamily: "'New Times Roman', monospace",
           fontSize: "48px",
-          marginTop: "250px", // Space between top of page and text
+          marginTop: "50px", // Space between top of page and text
           // marginBottom: "-80px",
           textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
         }}
       >
         Smile Perfected
+      </h1>
+      <h2
+        style={{
+          fontFamily: "'New Times Roman', monospace, bold", // Optional: font style
+          fontSize: "48px",
+        }}
+      >
+        20 MIN
       </h2>
       <img
         src={BeforeSmile}
         alt="before smile"
         style={{
-          width: "30%", // Adjust size as needed
+          width: "50%", // Adjust size as needed
           maxWidth: "600px", // Prevents image from getting too large
           height: "auto",
           borderRadius: "10px", // Optional: adds rounded corners
@@ -39,7 +47,7 @@ const SmilePerfected = () => {
         src={AfterSmile}
         alt="before and after 30"
         style={{
-          width: "30%", // Adjust size as needed
+          width: "50%", // Adjust size as needed
           maxWidth: "600px", // Prevents image from getting too large
           height: "auto",
           borderRadius: "10px", // Optional: adds rounded corners
@@ -52,7 +60,7 @@ const SmilePerfected = () => {
           maxWidth: "800px",
           margin: "0 auto",
           lineHeight: "1.8",
-          fontFamily: "'Courier', monospace",
+          fontFamily: "'New Times Roman'",
           fontSize: "1.2rem",
           textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
         }}

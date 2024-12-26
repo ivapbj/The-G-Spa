@@ -67,11 +67,10 @@ const EmsZero = () => {
         Are you ready to transform your body without the effort? Say goodbye to
         endless sit-ups, arm curls, and squats! Introducing EMSZero, the
         revolutionary non-invasive solution designed to activate muscles and
-        reduce fat effortlessly. With LipoMax Sculpt, you can achieve the
-        equivalent of 20,000 sit-ups, arm curls, or squats during your lunch
-        break! Experience a sculpted, toned body with minimal effort and maximum
-        results. Book your session now and start your transformation journey
-        today!
+        reduce fat effortlessly. With EMSZero, you can achieve the equivalent of
+        20,000 sit-ups, arm curls, or squats during your lunch break! Experience
+        a sculpted, toned body with minimal effort and maximum results. Book
+        your session now and start your transformation journey today!
       </p>
 
       {/* BOOK NOW Button */}

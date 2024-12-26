@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "../images/aboutusimage.jpg"; // Adjust path to your image
+import aboutImage from "../images/Giana.jpeg"; // Adjust path to your image
 
 const AboutUs = () => {
   return (
@@ -34,7 +34,7 @@ const AboutUs = () => {
         src={aboutImage}
         alt="Giana Headshot"
         style={{
-          width: "80%", // Adjust size as needed
+          width: "60%", // Adjust size as needed
           maxWidth: "600px", // Prevents image from getting too large
           height: "auto",
           borderRadius: "10px", // Optional: adds rounded corners
@@ -54,7 +54,7 @@ const AboutUs = () => {
         }}
       >
         Giana Aragon is originally from Springfield, Massachusetts. She is a
-        hardworking and motivated mom oftwo boys. She first studied psychology
+        hardworking and motivated mom of two boys. She first studied Psychology
         at Palm Beach State College and then ended up with a degree in Science
         becoming a licensed Dental Hygienist. She is licensed in both
         Massachusetts and Connecticut in dental hygiene and administering local

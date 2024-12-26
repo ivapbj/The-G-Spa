@@ -16,7 +16,11 @@ const ContactUs = () => {
         fontFamily: "'Courier', monospace", // Optional: font style
       }}
     >
-      <h1 style={{ marginBottom: "20px", fontSize: "50px" }}>Contact Us</h1>
+      <h1
+        style={{ marginTop: "-150px", marginBottom: "20px", fontSize: "50px" }}
+      >
+        Contact Us
+      </h1>
       <div style={{ lineHeight: "2", fontSize: "20px" }}>
         {/* Clickable Email */}
         <p>
@@ -28,14 +32,14 @@ const ContactUs = () => {
               textDecoration: " ",
             }}
           >
-            gianaaragon@gmail.com
+            At.the.gspa@gmail.com
           </a>
         </p>
 
         {/* Clickable Phone */}
         <p>
           Phone:
-          <a> 413-531-2171</a>
+          <a> 413-288-1668</a>
         </p>
 
         {/* Clickable Address */}
@@ -58,7 +62,7 @@ const ContactUs = () => {
         <p>
           Website:{" "}
           <a
-            href="https://www.gogallagher.com"
+            href="https://www.the-gspa.com"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -66,7 +70,7 @@ const ContactUs = () => {
               textDecoration: "none",
             }}
           >
-            www.gogallagher.com
+            www.the-gspa.com
           </a>
         </p>
       </div>

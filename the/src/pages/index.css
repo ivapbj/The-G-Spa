@@ -1,40 +1,87 @@
-/* Navbar adjustments for small screens */
-nav ul {
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  gap: 10px; /* Reduce the gap */
+/* Styling for the home container */
+.home-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
 }
 
-nav ul li {
-  font-size: 14px; /* Smaller text for menu items */
+/* Centered header text */
+.header-text {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Courier", monospace;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Header text size for smaller screens */
+/* Image container for the collage */
+.image-container {
+  display: grid;
+  grid-template-areas:
+    "img1 img2"
+    "img3 img3"
+    "img4 img5";
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Individual image styles */
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Optional: limit maximum size */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+/* Assigning grid areas */
+.image:nth-child(1) {
+  grid-area: img1;
+}
+
+.image:nth-child(2) {
+  grid-area: img2;
+}
+
+.image:nth-child(3) {
+  grid-area: img3;
+}
+
+.image:nth-child(4) {
+  grid-area: img4;
+}
+
+.image:nth-child(5) {
+  grid-area: img5;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 32px; /* Adjust font size */
+  .image-container {
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5";
+    grid-template-columns: 1fr;
   }
 
-  p {
-    font-size: 16px; /* Adjust paragraph size */
+  .image {
+    max-width: 100%; /* Adjust to container width */
   }
 
-  img {
-    object-fit: cover; /* Ensure background scales well */
+  .header-text {
+    font-size: 32px;
   }
 }
 
-/* For very small screens (phones in portrait mode) */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 24px; /* Further reduce font size */
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  nav ul {
-    flex-direction: column; /* Stack menu items vertically */
-    gap: 5px;
+  .header-text {
+    font-size: 24px;
   }
 }
+
