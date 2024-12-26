@@ -9,7 +9,7 @@
 }
 
 .navbar-logo {
-  max-width: 30%; /* Double the size of the logo */
+  max-width: 25%; /* Double the size of the logo */
   height: auto;
   object-fit: contain;
 }
@@ -25,9 +25,10 @@
 .navbar-link {
   text-decoration: none;
   color: white;
-  padding: 5px 10px;
-  font-weight: bold;
-  font-size: 1.25rem; /* Increase the font size by 25% */
+  padding: 5px 10px ;
+  /* font-weight: bold; */
+  font-size: 1.5rem; /* Increase the font size by 25% */
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Dropdown menu styles */

@@ -9,17 +9,17 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  margin-top: 0px; /* Adjust to ensure navbar doesn't cover the header */
+  margin-top: 0px; /* Ensure navbar doesn't overlap */
 }
 
-/* Header text styling with animation */
+/* Header text styling with typing effect */
 .header-text {
-  font-family: "Dancing Script",cursvive; /* Cursive font */
-  font-size: 2.5rem;
-  margin-top: 20px;
+  font-family: "Rouge Script", cursive;
+  font-size: 5rem;
+  margin-top: -100px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  overflow: hidden; /* Hides the text before animation completes */
-  white-space: nowrap; /* Prevent text wrapping during animation */
+  overflow: hidden; /* Hide the text until it's revealed */
+  white-space: nowrap; /* Prevent text wrapping */
   border-right: 4px solid white; /* Creates a cursor effect */
   animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
@@ -27,68 +27,102 @@
 /* Typing effect */
 @keyframes typing {
   from {
-    width: 0;
+    width: 0; /* Start with no visible text */
   }
   to {
-    width: 100%;
+    width: 100%; /* Expand to full width */
   }
 }
 
+/* Blinking cursor effect */
 @keyframes blink-caret {
   from, to {
-    border-color: transparent;
+    border-color: transparent; /* No cursor */
   }
   50% {
-    border-color: white;
+    border-color: white; /* Blink the cursor */
   }
 }
 
-/* Image container */
+/* Main image container */
 .image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between rows */
+  margin-top: 0px;
+  width: 100%; /* Full width for responsiveness */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Row styling */
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px; /* Space between images */
-  margin-top: 20px; /* Space between header and images */
+  width: 100%;
   flex-wrap: wrap; /* Allow images to wrap on smaller screens */
 }
 
-/* Image styling */
+/* Individual image styling */
 .image {
-  width: 300px; /* Fixed width */
-  height: 300px; /* Fixed height */
-  object-fit: cover; /* Ensure images maintain aspect ratio and fill the area */
+  width: 250px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  object-fit: contain; /* Ensure the entire image is visible without being cut off */
   border-radius: 10px;
   border: 5px solid black;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
-/* Smaller MinWhitening image */
+/* Custom styling for MinWhitening row */
+.min-whitening-row {
+  justify-content: center; /* Center align MinWhitening */
+}
+
 .min-whitening {
-  width: 300px; /* Slightly smaller width */
-  height: 350px; /* Slightly smaller height */
-  object-fit: cover; /* Maintain aspect ratio */
+  width: 250px; /* Custom size for MinWhitening */
+  height: 250px; /* Ensure MinWhitening image is similar size */
+  object-fit: contain; /* Keep MinWhitening fully visible */
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .header-text {
-    font-size: 1.5rem; /* Adjust header font size on smaller screens */
+    font-size: 3rem; /* Adjust font size for mobile */
+    margin-top: -50px; /* Adjust top margin for mobile */
   }
 
-  .image-container {
-    flex-direction: column; /* Stack images vertically on smaller screens */
-    gap: 10px; /* Reduce gap between images */
+  .row {
+    flex-direction: column; /* Stack images vertically */
+    gap: 15px; /* Reduce gap between images */
   }
 
   .image {
-    width: 90%; /* Adjust size for smaller screens */
-    height: auto; /* Maintain aspect ratio on smaller screens */
+    width: 80%; /* Adjust image width for mobile */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .min-whitening {
-    width: 80%; /* Adjust size for smaller screens */
+    width: 80%; /* Adjust MinWhitening size for smaller screens */
     height: auto;
   }
 }
 
+/* Extra small screen responsiveness (phones in portrait mode) */
+@media (max-width: 480px) {
+  .header-text {
+    font-size: 2.5rem; /* Smaller font size on smaller screens */
+    margin-top: -30px; /* Adjust top margin for very small screens */
+  }
+
+  .image {
+    width: 90%; /* Further adjust image width for very small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .min-whitening {
+    width: 90%; /* Adjust MinWhitening size for very small screens */
+    height: auto;
+  }
+}
