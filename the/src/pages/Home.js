@@ -5,7 +5,7 @@ import Collage2 from "../images/Collage2.jpeg";
 import Collage3 from "../images/Collage3.jpeg";
 import Collage4 from "../images/Collage4.jpeg";
 import Collage5 from "../images/Collage5.jpeg";
-import BA from "../images/BA.jpeg";
+import BA30 from "../images/BA30.jpeg";
 import MinWhitening from "../images/MinWhitening.JPEG";
 import "../pages/Home.css"; // Make sure the CSS is correctly imported
 
@@ -44,14 +44,14 @@ const Home = () => {
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
-            src={Collage3}
-            alt="Before and after belly"
+            src={BA30}
+            alt="Before and after teeth"
             className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
         </div>
 
-        {/* Second row of images */}
+        {/* Second row of images (move Collage3 to the right of Collage5) */}
         <div className="row">
           <img
             src={Collage4}
@@ -66,8 +66,8 @@ const Home = () => {
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
-            src={BA}
-            alt="Before and after teeth"
+            src={Collage3}
+            alt="Before and after belly"
             className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />

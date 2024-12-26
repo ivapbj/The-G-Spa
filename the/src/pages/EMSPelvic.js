@@ -61,25 +61,11 @@ const EmsPelvic = () => {
         other treatment options during this procedure.
       </p>
 
-      {/* Image Section
-      <div>
-        <img
-          src={ReproductionImage}
-          alt="reprduction graph"
-          style={{
-            width: "80%", // Adjust size as needed
-            maxWidth: "600px", // Prevents image from getting too large
-            height: "auto",
-            borderRadius: "10px", // Optional: adds rounded corners
-            boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-            marginBottom: "120px", // Space between image and text
-          }}
-        />
-      </div> */}
-
       {/* BOOK NOW Button */}
       <button
-        onClick={() => alert("Booking page coming soon!")}
+        onClick={() =>
+          (window.location.href = "https://calendly.com/at-the-gspa")
+        } // Change to redirect to Calendly
         style={{
           position: "fixed",
           bottom: "50px",

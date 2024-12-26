@@ -19,9 +19,9 @@ const AboutUs = () => {
       {/* Header */}
       <h1
         style={{
-          fontFamily: "'Courier', monospace", // Optional: font style
-          fontSize: "48px",
-          marginTop: "40px", // Space between top of page and text
+          fontFamily: "'New Times Roman', monospace", // Optional: font style
+          fontSize: "50px",
+          marginTop: "0px", // Space between top of page and text
           marginBottom: "40px",
           textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
         }}
@@ -46,7 +46,7 @@ const AboutUs = () => {
       {/* Content Section */}
       <p
         style={{
-          fontFamily: "'Courier', monospace",
+          fontFamily: "'New Times Roman', monospace",
           fontSize: "18px",
           marginTop: "30px", // Space between text and image
           maxWidth: "800px", // Controls the width of the paragraph

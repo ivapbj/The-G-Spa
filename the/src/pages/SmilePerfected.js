@@ -6,7 +6,8 @@ const SmilePerfected = () => {
   return (
     <div
       style={{
-        paddingTop: "50px",
+        marginTop: "-50px",
+        paddingTop: "20px",
         textAlign: "center",
         color: "white",
         backgroundColor: "black",
@@ -17,7 +18,6 @@ const SmilePerfected = () => {
           fontFamily: "'New Times Roman', monospace",
           fontSize: "48px",
           marginTop: "50px", // Space between top of page and text
-          // marginBottom: "-80px",
           textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
         }}
       >
@@ -40,7 +40,7 @@ const SmilePerfected = () => {
           height: "auto",
           borderRadius: "10px", // Optional: adds rounded corners
           boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
+          marginBottom: "20px", // Space between image and text
         }}
       />
       <img
@@ -52,7 +52,7 @@ const SmilePerfected = () => {
           height: "auto",
           borderRadius: "10px", // Optional: adds rounded corners
           boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
+          marginBottom: "20px", // Space between image and text
         }}
       />
       <p
@@ -76,7 +76,9 @@ const SmilePerfected = () => {
 
       {/* BOOK NOW Button */}
       <button
-        onClick={() => alert("Booking page coming soon!")}
+        onClick={() =>
+          (window.location.href = "https://calendly.com/at-the-gspa")
+        } // Change to redirect to Calendly
         style={{
           position: "fixed",
           bottom: "50px",
@@ -96,4 +98,5 @@ const SmilePerfected = () => {
     </div>
   );
 };
+
 export default SmilePerfected;

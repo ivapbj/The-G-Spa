@@ -17,7 +17,7 @@ const ContactUs = () => {
       }}
     >
       <h1
-        style={{ marginTop: "-150px", marginBottom: "20px", fontSize: "50px" }}
+        style={{ marginTop: "-500px", marginBottom: "20px", fontSize: "50px" }}
       >
         Contact Us
       </h1>

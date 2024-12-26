@@ -57,7 +57,9 @@ const Cavitation = () => {
       </p>
       {/* BOOK NOW Button */}
       <button
-        onClick={() => alert("Booking page coming soon!")}
+        onClick={() =>
+          (window.location.href = "https://calendly.com/at-the-gspa")
+        } // Change to redirect to Calendly
         style={{
           position: "fixed",
           bottom: "50px",
