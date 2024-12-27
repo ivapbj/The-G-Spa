@@ -14,8 +14,8 @@
 
 /* Header text styling with typing effect */
 .header-text {
-  font-family: "Rouge Script", cursive;
-  font-size: 5rem;
+  font-family: "New Time Roman";
+  font-size: 3rem;
   margin-top: -100px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   overflow: hidden; /* Hide the text until it's revealed */
