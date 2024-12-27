@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://the-gspa.com/static/css/main.64b21b45.css",
+    "main.css": "https://the-gspa.com/static/css/main.829ede81.css",
     "main.js": "https://the-gspa.com/static/js/main.63ec9006.js",
     "static/media/BA.jpeg": "https://the-gspa.com/static/media/BA.728e7e5bc5268314423f.jpeg",
     "static/media/Giana.jpeg": "https://the-gspa.com/static/media/Giana.b085b33cc22c910475f1.jpeg",
@@ -25,11 +25,11 @@
     "static/media/AfterSmile.JPEG": "https://the-gspa.com/static/media/AfterSmile.ef0c8b9035e8f55306f3.JPEG",
     "static/media/BeforeSmile.JPEG": "https://the-gspa.com/static/media/BeforeSmile.a76a9fe6ec2c7ef9ade8.JPEG",
     "index.html": "https://the-gspa.com/index.html",
-    "main.64b21b45.css.map": "https://the-gspa.com/static/css/main.64b21b45.css.map",
+    "main.829ede81.css.map": "https://the-gspa.com/static/css/main.829ede81.css.map",
     "main.63ec9006.js.map": "https://the-gspa.com/static/js/main.63ec9006.js.map"
   },
   "entrypoints": [
-    "static/css/main.64b21b45.css",
+    "static/css/main.829ede81.css",
     "static/js/main.63ec9006.js"
   ]
 }
