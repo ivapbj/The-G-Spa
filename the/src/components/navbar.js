@@ -1,13 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../components/Navbar.css";
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef(null); // For detecting clicks outside the dropdown
 
-  const handleDropdown = () => {
-    setShowDropdown(!showDropdown); // Toggle dropdown visibility
+  const handleDropdownClick = () => {
+    setShowDropdown(!showDropdown); // Toggle the dropdown
   };
+
+  // Function to close dropdown when clicking outside it
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setShowDropdown(false);
+    }
+  };
+
+  // Add event listener for clicks outside the dropdown
+  React.useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
@@ -16,19 +32,17 @@ const Navbar = () => {
         alt="The G Spa Logo"
         className="navbar-logo"
       />
-      {/* Navigation Links */}
       <ul className="navbar-links">
         <li>
           <Link to="/" className="navbar-link">
             Home
           </Link>
         </li>
-        <li
-          className="dropdown"
-          onMouseEnter={handleDropdown}
-          onMouseLeave={handleDropdown}
-        >
-          <span className="navbar-link">Services</span>
+        <li className="dropdown" ref={dropdownRef}>
+          <span className="navbar-link" onClick={handleDropdownClick}>
+            Services
+          </span>{" "}
+          {/*Click event added*/}
           {showDropdown && (
             <ul className="dropdown-list">
               <li>

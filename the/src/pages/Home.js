@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <div className="home-container">
       {/* Header with Animated Text */}
-      <h1 className="header-text">Are You Coming?</h1>
+      {/* <h1 className="header-text">Are You Coming?</h1> */}
 
       {/* Main Image Container */}
       <div className="image-container">

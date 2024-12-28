@@ -13,11 +13,18 @@ const ContactUs = () => {
         alignItems: "center", // Center horizontally
         textAlign: "center",
         padding: "20px",
-        fontFamily: "'Courier', monospace", // Optional: font style
+        fontFamily: "Garamound, serif", // Optional: font style
+        fontWeight: "lighter",
       }}
     >
       <h1
-        style={{ marginTop: "-500px", marginBottom: "20px", fontSize: "50px" }}
+        style={{
+          marginTop: "-500px",
+          marginBottom: "20px",
+          fontSize: "3rem;",
+          fontFamily: "Garamound",
+          fontWeight: "lighter",
+        }}
       >
         Contact Us
       </h1>

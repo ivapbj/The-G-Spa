@@ -5,20 +5,32 @@ const EmsPelvic = () => {
   return (
     <div
       style={{
-        paddingTop: "120px", // Prevents navbar overlap
+        minHeight: "100vh", // Ensure full viewport height
+        paddingTop: "120px",
         textAlign: "center",
         color: "white",
         backgroundColor: "black",
-        position: "relative", // Required for positioning "BOOK NOW" button
+        position: "relative", // For absolute button positioning
+        paddingLeft: "15px",
+        paddingRight: "15px",
+        paddingBottom: "80px", // Add space for button
+        "@media (max-width: 768px)": {
+          paddingBottom: "70px",
+        },
       }}
     >
       <h3
         style={{
-          fontFamily: "'Courier', monospace",
-          fontSize: "48px",
-          marginTop: "150px", // Space between top of page and text
+          fontFamily: "'Garamond', serif",
+          fontSize: "3rem", // Responsive font size
+          fontWeight: "lighter",
+          marginTop: "0px", // Adjusted for better spacing
           marginBottom: "20px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
+          "@media (max-width: 768px)": {
+            fontSize: "2.5rem",
+            marginTop: "50px",
+          },
         }}
       >
         EMS Pelvic
@@ -35,6 +47,9 @@ const EmsPelvic = () => {
             borderRadius: "10px", // Optional: adds rounded corners
             boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
             marginBottom: "50px", // Space between image and text
+            "@media (max-width: 768px)": {
+              width: "90%",
+            },
           }}
         />
       </div>
@@ -45,9 +60,13 @@ const EmsPelvic = () => {
           maxWidth: "800px",
           margin: "0 auto",
           lineHeight: "1.8",
-          fontFamily: "'Courier', monospace",
-          fontSize: "1.2rem",
+          fontFamily: "'Garamond', serif",
+          fontSize: "1.5rem", // KEEPING the font size here
           textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
+          "@media (max-width: 768px)": {
+            paddingLeft: "10px",
+            paddingRight: "10px",
+          },
         }}
       >
         EMSPelvic is a non-invasive seat that uses electromagnetic waves to
@@ -65,12 +84,12 @@ const EmsPelvic = () => {
       <button
         onClick={() =>
           (window.location.href = "https://calendly.com/at-the-gspa")
-        } // Change to redirect to Calendly
+        }
         style={{
-          position: "fixed",
-          bottom: "50px",
-          right: "20px",
-          backgroundColor: "#ff6347", // Tomato color
+          position: "absolute",
+          bottom: "20px",
+          right: "10px",
+          backgroundColor: "#ff6347",
           color: "white",
           padding: "10px 20px",
           fontSize: "16px",
@@ -78,6 +97,12 @@ const EmsPelvic = () => {
           border: "none",
           cursor: "pointer",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+          "@media (max-width: 768px)": {
+            bottom: "10px",
+            right: "5px",
+            fontSize: "14px",
+            padding: "8px 16px",
+          },
         }}
       >
         BOOK NOW

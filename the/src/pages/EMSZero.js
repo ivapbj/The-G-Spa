@@ -1,26 +1,38 @@
 import React from "react";
-import ButtImage from "../images/butt.jpeg"; // Adjust path to your image
-import AbsImage from "../images/abs.jpeg"; // Adjust path to your image
-import ThighImage from "../images/thigh.jpeg"; // Adjust path to your image
+import ButtImage from "../images/butt.jpeg";
+import AbsImage from "../images/abs.jpeg";
+import ThighImage from "../images/thigh.jpeg";
 
 const EmsZero = () => {
   return (
     <div
       style={{
-        paddingTop: "120px", // Prevents navbar overlap
+        minHeight: "100vh", // Ensure full viewport height
+        paddingTop: "120px",
         textAlign: "center",
         color: "white",
         backgroundColor: "black",
-        position: "relative", // Required for positioning "BOOK NOW" button
+        position: "relative", // For absolute button positioning
+        paddingLeft: "15px",
+        paddingRight: "15px",
+        paddingBottom: "80px", // Add space for button
+        "@media (max-width: 768px)": {
+          paddingBottom: "70px",
+        },
       }}
     >
       <h2
         style={{
-          fontFamily: "'Courier', monospace",
-          fontSize: "48px",
-          marginTop: "150px", // Space between top of page and text
-          marginBottom: "-80px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+          fontFamily: "Garamond, serif",
+          fontSize: "3rem", // Use rem for responsiveness
+          marginTop: "0px",
+          marginBottom: "-50px", // Adjusted
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
+          fontWeight: "lighter",
+          "@media (max-width: 768px)": {
+            fontSize: "2.5rem",
+            marginTop: "50px",
+          },
         }}
       >
         EMSZero
@@ -32,8 +44,8 @@ const EmsZero = () => {
           display: "flex",
           justifyContent: "center",
           gap: "20px",
-          flexWrap: "wrap", // Adjusts layout for smaller screens
-          marginTop: "100px",
+          flexWrap: "wrap",
+          marginTop: "80px", // Adjust for better spacing
           marginBottom: "40px",
         }}
       >
@@ -43,11 +55,15 @@ const EmsZero = () => {
             src={src}
             alt={`Image ${index + 1}`}
             style={{
-              width: "300px",
-              height: "300px",
-              objectFit: "cover", // Ensures consistent sizing
+              width: "280px", // Slightly smaller for mobile
+              height: "280px",
+              objectFit: "cover",
               borderRadius: "10px",
               boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)",
+              "@media (max-width: 768px)": {
+                width: "220px",
+                height: "220px",
+              },
             }}
           />
         ))}
@@ -59,9 +75,12 @@ const EmsZero = () => {
           maxWidth: "800px",
           margin: "0 auto",
           lineHeight: "1.8",
-          fontFamily: "'Courier', monospace",
-          fontSize: "1.2rem",
+          fontFamily: "Garamond, serif",
+          fontSize: "1.5rem", // Use rem
           textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
+          "@media (max-width: 768px)": {
+            fontSize: "1rem",
+          },
         }}
       >
         Are you ready to transform your body without the effort? Say goodbye to
@@ -77,12 +96,12 @@ const EmsZero = () => {
       <button
         onClick={() =>
           (window.location.href = "https://calendly.com/at-the-gspa")
-        } // Change to redirect to Calendly
+        }
         style={{
-          position: "fixed",
-          bottom: "50px",
-          right: "20px",
-          backgroundColor: "#ff6347", // Tomato color
+          position: "absolute",
+          bottom: "20px",
+          right: "10px",
+          backgroundColor: "#ff6347",
           color: "white",
           padding: "10px 20px",
           fontSize: "16px",
@@ -90,6 +109,12 @@ const EmsZero = () => {
           border: "none",
           cursor: "pointer",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+          "@media (max-width: 768px)": {
+            bottom: "10px",
+            right: "5px",
+            fontSize: "14px",
+            padding: "8px 16px",
+          },
         }}
       >
         BOOK NOW

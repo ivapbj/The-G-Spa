@@ -5,17 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Courier", monospace;
+  font-family: "Garamound", sans-serif;
+  font-weight: lighter;
 }
 
 .navbar-logo {
   max-width: 30%; /* Increased logo size */
   height: auto;
   object-fit: contain;
-  /* border: 2px solid white; Add a white border */
-  /* border-radius: 10px; /* Optional: Add rounded corners */
-  /* padding: 5px; Add some space around the logo within the border */
-  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); Add a subtle glow */ 
+  
 }
 
 .navbar-links {
@@ -30,8 +28,9 @@
   text-decoration: none;
   color: white;
   padding: 5px 10px;
-  font-size: 1.5rem;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  font-family: "Garamond", sans-serif;
+  font-weight: lighter;
 }
 
 .dropdown {

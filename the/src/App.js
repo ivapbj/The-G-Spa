@@ -9,9 +9,9 @@ import VacuumTherapy from "./pages/VacuumTherapy";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-import Services from "./pages/Services";
 import SmilePerfected from "./pages/SmilePerfected";
 import AddonServices from "./pages/AddonServices";
+
 function App() {
   return (
     <Router>
@@ -20,11 +20,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/services" element={<Services />} />
+
+        {/* Direct Routes without Services Parent */}
+        <Route path="/services/body-sculpting" element={<BodySculpting />} />
         <Route path="/services/smile-perfected" element={<SmilePerfected />} />
         <Route path="/services/add-on-services" element={<AddonServices />} />
 
-        <Route path="/services/body-sculpting" element={<BodySculpting />} />
+        {/*Direct Routes for Body Sculpting individual pages */}
         <Route path="/emszero" element={<EmsZero />} />
         <Route path="/emspelvic" element={<EmsPelvic />} />
         <Route path="/cavitation" element={<Cavitation />} />

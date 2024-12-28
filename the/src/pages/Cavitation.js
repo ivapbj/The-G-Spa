@@ -5,19 +5,30 @@ const Cavitation = () => {
   return (
     <div
       style={{
+        minHeight: "100vh",
         paddingTop: "50px",
         textAlign: "center",
         color: "white",
         backgroundColor: "black",
+        paddingLeft: "15px",
+        paddingRight: "15px",
+        position: "relative",
+        paddingBottom: "80px", // Added padding bottom to accomodate button
+        "@media (max-width: 768px)": {
+          paddingBottom: "70px",
+        },
       }}
     >
       <h2
         style={{
-          fontFamily: "'Courier', monospace",
-          fontSize: "48px",
-          marginTop: "250px", // Space between top of page and text
-          // marginBottom: "-80px",
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+          fontFamily: "Garamond, serif",
+          fontWeight: "lighter",
+          fontSize: "3rem",
+          marginTop: "-50px",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
+          "@media (max-width: 768px)": {
+            fontSize: "2.5rem",
+          },
         }}
       >
         Cavitation
@@ -26,12 +37,15 @@ const Cavitation = () => {
         src={CavitationImage}
         alt="before and after 30"
         style={{
-          width: "30%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
+          width: "80%",
+          maxWidth: "500px",
           height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", /// Space between image and text
+          borderRadius: "10px",
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)",
+          marginBottom: "20px",
+          "@media (max-width: 768px)": {
+            width: "90%",
+          },
         }}
       />
       <p
@@ -39,9 +53,15 @@ const Cavitation = () => {
           maxWidth: "800px",
           margin: "0 auto",
           lineHeight: "1.8",
-          fontFamily: "'Courier', monospace",
-          fontSize: "1.2rem",
+          fontFamily: "Garamond, serif",
+          fontWeight: "lighter",
+          fontSize: "1.5rem",
           textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
+          "@media (max-width: 768px)": {
+            fontSize: "1rem",
+            paddingLeft: "10px",
+            paddingRight: "10px",
+          },
         }}
       >
         Body cavitation, also known as ultrasonic cavitation, is a non-invasive
@@ -59,12 +79,12 @@ const Cavitation = () => {
       <button
         onClick={() =>
           (window.location.href = "https://calendly.com/at-the-gspa")
-        } // Change to redirect to Calendly
+        }
         style={{
-          position: "fixed",
-          bottom: "50px",
-          right: "20px",
-          backgroundColor: "#ff6347", // Tomato color
+          position: "absolute",
+          bottom: "20px",
+          right: "10px",
+          backgroundColor: "#ff6347",
           color: "white",
           padding: "10px 20px",
           fontSize: "16px",
@@ -72,6 +92,12 @@ const Cavitation = () => {
           border: "none",
           cursor: "pointer",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+          "@media (max-width: 768px)": {
+            bottom: "10px",
+            right: "5px",
+            fontSize: "14px",
+            padding: "8px 16px",
+          },
         }}
       >
         BOOK NOW

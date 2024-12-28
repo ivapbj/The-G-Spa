@@ -14,8 +14,8 @@
 
 /* Header text styling with typing effect */
 .header-text {
-  font-family:'Lucida Sans';
-  font-size: 2rem;
+  font-family:'garamond', serif;
+  font-size: 2.5rem;
   margin-top: 15px;
   margin-bottom: 30px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);

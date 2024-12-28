@@ -1,32 +1,48 @@
 import React from "react";
-import BeforeSmile from "../images/BeforeSmile.JPEG"; // Adjust path to your image
-import AfterSmile from "../images/AfterSmile.JPEG"; // Adjust path to your image
+import BeforeSmile from "../images/BeforeSmile.JPEG";
+import AfterSmile from "../images/AfterSmile.JPEG";
 
 const SmilePerfected = () => {
   return (
     <div
       style={{
-        marginTop: "-50px",
+        minHeight: "100vh",
         paddingTop: "20px",
         textAlign: "center",
         color: "white",
         backgroundColor: "black",
+        position: "relative",
+        paddingLeft: "15px",
+        paddingRight: "15px",
+        paddingBottom: "80px",
+        "@media (max-width: 768px)": {
+          paddingBottom: "70px",
+        },
       }}
     >
       <h1
         style={{
-          fontFamily: "'New Times Roman', monospace",
-          fontSize: "48px",
-          marginTop: "50px", // Space between top of page and text
-          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)", // Text shadow for visibility
+          fontFamily: "Garamond, serif",
+          fontSize: "3rem", // Using rem units
+          fontWeight: "lighter",
+          marginTop: "50px",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
+          "@media (max-width: 768px)": {
+            fontSize: "2.5rem",
+            marginTop: "30px",
+          },
         }}
       >
         Smile Perfected
       </h1>
       <h2
         style={{
-          fontFamily: "'New Times Roman', monospace, bold", // Optional: font style
-          fontSize: "48px",
+          fontFamily: "Garamond, serif",
+          fontSize: "3rem",
+          fontWeight: "lighter",
+          "@media (max-width: 768px)": {
+            fontSize: "2.5rem",
+          },
         }}
       >
         20 MIN
@@ -35,24 +51,30 @@ const SmilePerfected = () => {
         src={BeforeSmile}
         alt="before smile"
         style={{
-          width: "50%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
+          width: "80%", // Use % for responsiveness
+          maxWidth: "500px", // Limiting max width
           height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", // Space between image and text
+          borderRadius: "10px",
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)",
+          marginBottom: "20px",
+          "@media (max-width: 768px)": {
+            width: "90%",
+          },
         }}
       />
       <img
         src={AfterSmile}
-        alt="before and after 30"
+        alt="after smile"
         style={{
-          width: "50%", // Adjust size as needed
-          maxWidth: "600px", // Prevents image from getting too large
+          width: "80%", // Use % for responsiveness
+          maxWidth: "500px", // Limiting max width
           height: "auto",
-          borderRadius: "10px", // Optional: adds rounded corners
-          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)", // Optional: adds shadow to image
-          marginBottom: "20px", // Space between image and text
+          borderRadius: "10px",
+          boxShadow: "0 4px 8px rgba(255, 255, 255, 0.3)",
+          marginBottom: "20px",
+          "@media (max-width: 768px)": {
+            width: "90%",
+          },
         }}
       />
       <p
@@ -60,9 +82,13 @@ const SmilePerfected = () => {
           maxWidth: "800px",
           margin: "0 auto",
           lineHeight: "1.8",
-          fontFamily: "'New Times Roman'",
-          fontSize: "1.2rem",
+          fontFamily: "'Garamond', serif",
+          fontSize: "1.5rem",
           textShadow: "1px 1px 3px rgba(0, 0, 0, 0.8)",
+          "@media (max-width: 768px)": {
+            paddingLeft: "10px",
+            paddingRight: "10px",
+          },
         }}
       >
         Smile Perfected teeth whitening is fast, effective, and
@@ -73,17 +99,16 @@ const SmilePerfected = () => {
         for everyone. Ask us about Smile Perfected and take the first step
         towards a whiter, brighter smile today!
       </p>
-
       {/* BOOK NOW Button */}
       <button
         onClick={() =>
           (window.location.href = "https://calendly.com/at-the-gspa")
-        } // Change to redirect to Calendly
+        }
         style={{
-          position: "fixed",
-          bottom: "50px",
-          right: "20px",
-          backgroundColor: "#ff6347", // Tomato color
+          position: "absolute",
+          bottom: "20px",
+          right: "10px",
+          backgroundColor: "#ff6347",
           color: "white",
           padding: "10px 20px",
           fontSize: "16px",
@@ -91,6 +116,12 @@ const SmilePerfected = () => {
           border: "none",
           cursor: "pointer",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+          "@media (max-width: 768px)": {
+            bottom: "10px",
+            right: "5px",
+            fontSize: "14px",
+            padding: "8px 16px",
+          },
         }}
       >
         BOOK NOW
