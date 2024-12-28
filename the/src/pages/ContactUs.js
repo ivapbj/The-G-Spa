@@ -4,31 +4,40 @@ const ContactUs = () => {
   return (
     <div
       style={{
-        backgroundColor: "black", // Background color for the page
+        backgroundColor: "black",
         color: "white",
-        minHeight: "100vh", // Full viewport height
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center", // Center vertically
-        alignItems: "center", // Center horizontally
+        justifyContent: "center",
+        alignItems: "center",
         textAlign: "center",
         padding: "20px",
-        fontFamily: "Garamound, serif", // Optional: font style
+        fontFamily: "Garamound, serif",
         fontWeight: "lighter",
       }}
     >
+      {/* Header with Responsive Font Size and Margin*/}
       <h1
         style={{
-          marginTop: "-500px",
-          marginBottom: "20px",
-          fontSize: "3rem;",
+          marginTop: "-25rem", // Adjusted margin top for smaller screens, using rem for responsiveness
+          marginBottom: "1.5rem", // Adjusted margin bottom for better spacing
+          fontSize: "2.5rem", // Slightly smaller font size on mobile
           fontFamily: "Garamound",
           fontWeight: "lighter",
+          textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
         }}
       >
         Contact Us
       </h1>
-      <div style={{ lineHeight: "2", fontSize: "20px" }}>
+      {/* Content Container for Contact Info with Responsive Font Size*/}
+      <div
+        style={{
+          lineHeight: "1.8", // slightly smaller line height
+          fontSize: "1.5rem", // Adjusted for smaller screens
+          maxWidth: "90%", // added max width for small screens
+        }}
+      >
         {/* Clickable Email */}
         <p>
           Email:{" "}
@@ -36,7 +45,7 @@ const ContactUs = () => {
             href="mailto:gianaaragon@gmail.com"
             style={{
               color: "white",
-              textDecoration: " ",
+              textDecoration: "underline", // Underline links for better visibility
             }}
           >
             At.the.gspa@gmail.com
@@ -58,10 +67,10 @@ const ContactUs = () => {
             rel="noopener noreferrer"
             style={{
               color: "white",
-              textDecoration: "none",
+              textDecoration: "underline", // Underline links for better visibility
             }}
           >
-            6 N Main St. East Longmeadow, MA
+            6 N.Main St. EastLongmeadow, MA
           </a>
         </p>
 
@@ -74,7 +83,7 @@ const ContactUs = () => {
             rel="noopener noreferrer"
             style={{
               color: "white",
-              textDecoration: "none",
+              textDecoration: "underline", // Underline links for better visibility
             }}
           >
             www.the-gspa.com
