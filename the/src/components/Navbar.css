@@ -9,9 +9,13 @@
 }
 
 .navbar-logo {
-  max-width: 25%; /* Double the size of the logo */
+  max-width: 30%; /* Increased logo size */
   height: auto;
   object-fit: contain;
+  /* border: 2px solid white; Add a white border */
+  /* border-radius: 10px; /* Optional: Add rounded corners */
+  /* padding: 5px; Add some space around the logo within the border */
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); Add a subtle glow */ 
 }
 
 .navbar-links {
@@ -19,19 +23,17 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: 30px; /* Space between menu items */
+  gap: 30px;
 }
 
 .navbar-link {
   text-decoration: none;
   color: white;
-  padding: 5px 10px ;
-  /* font-weight: bold; */
-  font-size: 1.5rem; /* Increase the font size by 25% */
-  font-family: 'Times New Roman', Times, serif;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
 }
 
-/* Dropdown menu styles */
 .dropdown {
   position: relative;
   cursor: pointer;
@@ -59,10 +61,9 @@
 }
 
 .dropdown-item:hover {
-  background-color: #333; /* Darken item on hover */
+  background-color: #333;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
   .navbar-links {
     flex-direction: column;
@@ -71,18 +72,21 @@
 
   .dropdown-list {
     position: static;
-    width: 100%; /* Make dropdown take full width */
+    width: 100%;
     box-shadow: none;
     border-radius: 0;
   }
 
   .navbar-link {
     padding: 10px;
-    width: 100%; /* Make each link full width for better mobile usability */
-    font-size: 1.25rem; /* Increase font size on mobile for better readability */
+    width: 100%;
+    font-size: 1.25rem;
   }
-
   .navbar-logo {
-    max-width: 40%; /* Slightly increase logo size on mobile screens */
+    max-width: 50%; /* Increased logo size on mobile */
+    /* border: 1px solid white; Adjusted for mobile view */
+    border-radius: 8px;
+    padding: 3px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
   }
 }

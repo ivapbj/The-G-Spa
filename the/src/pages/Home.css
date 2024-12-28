@@ -14,9 +14,9 @@
 
 /* Header text styling with typing effect */
 .header-text {
-  font-family: "Courier", cursive;
-  font-size: 3rem;
-  margin-top: -100px;
+  font-family: "New Times Roman";
+  font-size: 2rem;
+  margin-top: -90px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   overflow: hidden; /* Hide the text until it's revealed */
   white-space: nowrap; /* Prevent text wrapping */
