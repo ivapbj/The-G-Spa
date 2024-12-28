@@ -85,8 +85,6 @@
   .navbar-logo {
     max-width: 50%; /* Increased logo size on mobile */
     /* border: 1px solid white; Adjusted for mobile view */
-    border-radius: 8px;
-    padding: 3px;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    
   }
 }
