@@ -34,7 +34,7 @@ const AboutUs = () => {
         src={aboutImage}
         alt="Giana Headshot"
         style={{
-          width: "60%", // Adjust size as needed
+          width: "40%", // Adjust size as needed
           maxWidth: "600px", // Prevents image from getting too large
           height: "auto",
           borderRadius: "10px", // Optional: adds rounded corners
