@@ -73,7 +73,7 @@ const AddonServices = () => {
           </li>
         </ul>
       </section>
-      <section className="addon-service">
+      <section className="addon-service last-addon-service">
         <h3 className="addon-service-header">Vibration Therapy Plate</h3>
         <img
           src={VibrationTherapyImage}
@@ -82,6 +82,7 @@ const AddonServices = () => {
         />
       </section>
 
+      {/* BOOK NOW Button with Inline Styles */}
       <button
         onClick={() =>
           (window.location.href = "https://calendly.com/at-the-gspa")
