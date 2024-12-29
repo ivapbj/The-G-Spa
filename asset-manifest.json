@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "https://the-gspa.com/static/css/main.dade8baa.css",
-    "main.js": "https://the-gspa.com/static/js/main.2750e6b6.js",
+    "main.css": "https://the-gspa.com/static/css/main.03d1fd0d.css",
+    "main.js": "https://the-gspa.com/static/js/main.b9a9a172.js",
     "static/media/BA.jpeg": "https://the-gspa.com/static/media/BA.728e7e5bc5268314423f.jpeg",
-    "static/media/Giana.jpeg": "https://the-gspa.com/static/media/Giana.b085b33cc22c910475f1.jpeg",
+    "static/media/Giana.jpeg": "https://the-gspa.com/static/media/Giana.2acd74bcee8db43edfdf.jpeg",
     "static/media/Radiofrequency.jpeg": "https://the-gspa.com/static/media/Radiofrequency.c57891304c5cd89f2942.jpeg",
     "static/media/MinWhitening.JPEG": "https://the-gspa.com/static/media/MinWhitening.1065980855a2a9677136.JPEG",
     "static/media/ReproductionImage.jpeg": "https://the-gspa.com/static/media/ReproductionImage.0ec00254b7cd9ff6e1ff.jpeg",
@@ -25,11 +25,11 @@
     "static/media/AfterSmile.JPEG": "https://the-gspa.com/static/media/AfterSmile.ef0c8b9035e8f55306f3.JPEG",
     "static/media/BeforeSmile.JPEG": "https://the-gspa.com/static/media/BeforeSmile.a76a9fe6ec2c7ef9ade8.JPEG",
     "index.html": "https://the-gspa.com/index.html",
-    "main.dade8baa.css.map": "https://the-gspa.com/static/css/main.dade8baa.css.map",
-    "main.2750e6b6.js.map": "https://the-gspa.com/static/js/main.2750e6b6.js.map"
+    "main.03d1fd0d.css.map": "https://the-gspa.com/static/css/main.03d1fd0d.css.map",
+    "main.b9a9a172.js.map": "https://the-gspa.com/static/js/main.b9a9a172.js.map"
   },
   "entrypoints": [
-    "static/css/main.dade8baa.css",
-    "static/js/main.2750e6b6.js"
+    "static/css/main.03d1fd0d.css",
+    "static/js/main.b9a9a172.js"
   ]
 }
