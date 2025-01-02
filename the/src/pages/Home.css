@@ -26,25 +26,6 @@
   font-weight: lighter;
 }
 
-/* Typing effect */
-@keyframes typing {
-  from {
-    width: 0; /* Start with no visible text */
-  }
-  to {
-    width: 100%; /* Expand to full width */
-  }
-}
-
-/* Blinking cursor effect */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent; /* No cursor */
-  }
-  50% {
-    border-color: white; /* Blink the cursor */
-  }
-}
 
 /* Main image container */
 .image-container {
@@ -69,12 +50,12 @@
 
 /* Individual image styling */
 .image {
-  width: 250px; /* Fixed width */
-  height: 250px; /* Fixed height */
-  object-fit: contain; /* Ensure the entire image is visible without being cut off */
-  border-radius: 10px;
-  border: 5px solid black;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    object-fit: cover; /* Ensure images cover the space without losing aspect ratio */
+    border-radius: 10px;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
 /* Custom styling for MinWhitening row */
@@ -83,9 +64,9 @@
 }
 
 .min-whitening {
-  width: 250px; /* Custom size for MinWhitening */
-  height: 250px; /* Ensure MinWhitening image is similar size */
-  object-fit: contain; /* Keep MinWhitening fully visible */
+  width: 300px; /* Increased width */
+  height: 300px; /* Ensure MinWhitening image is similar size */
+  object-fit: cover; /* Ensure MinWhitening image covers the space without losing aspect ratio */
 }
 
 /* Mobile Responsiveness */
@@ -101,13 +82,16 @@
   }
 
   .image {
-    width: 80%; /* Adjust image width for mobile */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
   }
 
   .min-whitening {
-    width: 80%; /* Adjust MinWhitening size for smaller screens */
+    width: 100%;
     height: auto;
+    object-fit: cover;
   }
 }
 
@@ -119,12 +103,14 @@
   }
 
   .image {
-    width: 90%; /* Further adjust image width for very small screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Further adjust image width for very small screens */
+    height: auto;
+    object-fit: cover;
   }
 
   .min-whitening {
-    width: 90%; /* Adjust MinWhitening size for very small screens */
+    width: 100%; /* Adjust MinWhitening size for very small screens */
     height: auto;
+    object-fit: cover;
   }
 }
