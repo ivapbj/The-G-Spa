@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <img
-        src={require("../images/newlogo.jpg")}
+        src={require("../images/newlogo.png")}
         alt="The G Spa Logo"
         className="navbar-logo"
       />
