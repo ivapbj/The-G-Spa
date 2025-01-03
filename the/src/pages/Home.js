@@ -24,51 +24,48 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {/* Header with Animated Text */}
-      {/* <h1 className="header-text">Are You Coming?</h1> */}
-
       {/* Main Image Container */}
       <div className="image-container">
         {/* First row of images */}
         <div className="row">
           <img
+            className="collage1"
             src={Collage1}
             alt="Before and after torso"
-            className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
+            className="collage2"
             src={Collage2}
             alt="Before and after abs"
-            className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
+            className="BA30"
             src={BA30}
             alt="Before and after teeth"
-            className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
         </div>
 
-        {/* Second row of images (move Collage3 to the right of Collage5) */}
+        {/* Second row of images  */}
         <div className="row">
           <img
+            className="collage4"
             src={Collage4}
             alt="Before and after side"
-            className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
+            className="collage5"
             src={Collage5}
             alt="Before and after butt"
-            className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
+            className="collage3"
             src={Collage3}
             alt="Before and after belly"
-            className="image"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
         </div>
@@ -76,9 +73,9 @@ const Home = () => {
         {/* MinWhitening in its own row (with click functionality for navigation) */}
         <div className="row min-whitening-row">
           <img
+            className="min-whitening"
             src={MinWhitening}
             alt="Before and after teeth whitening"
-            className="image min-whitening"
             onClick={handleMinWhiteningClick} // Add onClick handler for MinWhitening
           />
         </div>

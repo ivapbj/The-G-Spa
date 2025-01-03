@@ -1,4 +1,4 @@
-/* Home Page Container */
+/* General container styling */
 .home-container {
   background-color: black;
   color: white;
@@ -9,108 +9,126 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  margin-top: 0px; /* Ensure navbar doesn't overlap */
+  margin-top: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
-
-/* Header text styling with typing effect */
-.header-text {
-  font-family:'garamond', serif;
-  font-size: 2.5rem;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-  overflow: hidden; /* Hide the text until it's revealed */
-  white-space: nowrap; /* Prevent text wrapping */
-  border-right: 4px solid white; /* Creates a cursor effect */
-  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
-  font-weight: lighter;
-}
-
 
 /* Main image container */
 .image-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Space between rows */
-  margin-top: 0px;
-  width: 100%; /* Full width for responsiveness */
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: repeat(3, auto); /* 3 rows for images */
+  grid-gap: 20px; /* Space between rows */
+  justify-items: center; /* Center items within rows */
+  align-items: center; /* Align items in the middle of rows */
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center the container */
 }
 
-/* Row styling */
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Space between images */
+/* Row 1 styling: collage1, collage2, BA30 */
+.row:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for first row */
+  gap: 20px;
   width: 100%;
-  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+/* Row 2 styling: Collage3, Collage4, Collage5 */
+.row:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for second row */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Row 3 styling: min-whitening */
+.row:nth-child(3) {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  width: 100%;
 }
 
 /* Individual image styling */
-.image {
-    width: 300px; /* Increased width */
-    height: 300px; /* Increased height */
-    object-fit: cover; /* Ensure images cover the space without losing aspect ratio */
-    border-radius: 10px;
-    border: 5px solid black;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+.collage1,
+.collage2,
+.BA30,
+.collage3,
+.collage4,
+.collage5,
+.min-whitening {
+  border-radius: 10px;
+  border: 5px solid black;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  object-fit: cover;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* Custom styling for MinWhitening row */
-.min-whitening-row {
-  justify-content: center; /* Center align MinWhitening */
+/* Specific image sizes for desktop */
+.collage1,
+.collage3 {
+  max-width: 325px;
+}
+
+.collage2 {
+  max-width: 600px;
+}
+
+.BA30 {
+  max-width: 350px;
+}
+
+.collage4 {
+  max-width: 450px;
+}
+
+.collage5 {
+  max-width: 520px;
 }
 
 .min-whitening {
-  width: 300px; /* Increased width */
-  height: 300px; /* Ensure MinWhitening image is similar size */
-  object-fit: cover; /* Ensure MinWhitening image covers the space without losing aspect ratio */
+  max-width: 300px;
 }
 
-/* Mobile Responsiveness */
+/* Responsive Adjustments for Tablets */
 @media (max-width: 768px) {
-  .header-text {
-    font-size: 3rem; /* Adjust font size for mobile */
-    margin-top: -50px; /* Adjust top margin for mobile */
+  .row:nth-child(1),
+  .row:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row for smaller screens */
+    gap: 15px;
   }
 
-  .row {
-    flex-direction: column; /* Stack images vertically */
-    gap: 15px; /* Reduce gap between images */
-  }
-
-  .image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-
+  .row:nth-child(3) {
+    flex-direction: column; /* Stack the image vertically if necessary */
+    align-items: center;
   }
 
   .min-whitening {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 90%;
   }
 }
 
-/* Extra small screen responsiveness (phones in portrait mode) */
+/* Responsive Adjustments for Mobile Phones */
 @media (max-width: 480px) {
-  .header-text {
-    font-size: 2.5rem; /* Smaller font size on smaller screens */
-    margin-top: -30px; /* Adjust top margin for very small screens */
+  .row:nth-child(1),
+  .row:nth-child(2) {
+    grid-template-columns: 1fr; /* 1 column per row for mobile screens */
+    gap: 10px;
   }
 
-  .image {
-    width: 100%; /* Further adjust image width for very small screens */
-    height: auto;
-    object-fit: cover;
+  .collage1,
+  .collage2,
+  .BA30,
+  .collage3,
+  .collage4,
+  .collage5 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
   }
 
   .min-whitening {
-    width: 100%; /* Adjust MinWhitening size for very small screens */
-    height: auto;
-    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
   }
 }
