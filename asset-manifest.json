@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://the-gspa.com/static/css/main.0bbd7975.css",
-    "main.js": "https://the-gspa.com/static/js/main.235dca12.js",
+    "main.js": "https://the-gspa.com/static/js/main.ce3aa9f5.js",
     "static/media/BA.jpeg": "https://the-gspa.com/static/media/BA.728e7e5bc5268314423f.jpeg",
     "static/media/Giana.jpeg": "https://the-gspa.com/static/media/Giana.2acd74bcee8db43edfdf.jpeg",
     "static/media/Radiofrequency.jpeg": "https://the-gspa.com/static/media/Radiofrequency.c57891304c5cd89f2942.jpeg",
@@ -19,17 +19,17 @@
     "static/media/BA30.jpeg": "https://the-gspa.com/static/media/BA30.a9c065b6211b52a7c24e.jpeg",
     "static/media/Collage5.jpeg": "https://the-gspa.com/static/media/Collage5.1f6dc01eda7cf5de1958.jpeg",
     "static/media/Collage4.jpeg": "https://the-gspa.com/static/media/Collage4.6713a6ecac83b882432b.jpeg",
-    "static/media/newlogo.jpg": "https://the-gspa.com/static/media/newlogo.f39302095b76230fc5f5.jpg",
+    "static/media/newlogo.png": "https://the-gspa.com/static/media/newlogo.f39302095b76230fc5f5.png",
     "static/media/cavitation.jpeg": "https://the-gspa.com/static/media/cavitation.17a2d70ec28c22efa120.jpeg",
     "static/media/redlight.jpeg": "https://the-gspa.com/static/media/redlight.1b7248bfb6ef3bbf7ea3.jpeg",
     "static/media/AfterSmile.JPEG": "https://the-gspa.com/static/media/AfterSmile.ef0c8b9035e8f55306f3.JPEG",
     "static/media/BeforeSmile.JPEG": "https://the-gspa.com/static/media/BeforeSmile.a76a9fe6ec2c7ef9ade8.JPEG",
     "index.html": "https://the-gspa.com/index.html",
     "main.0bbd7975.css.map": "https://the-gspa.com/static/css/main.0bbd7975.css.map",
-    "main.235dca12.js.map": "https://the-gspa.com/static/js/main.235dca12.js.map"
+    "main.ce3aa9f5.js.map": "https://the-gspa.com/static/js/main.ce3aa9f5.js.map"
   },
   "entrypoints": [
     "static/css/main.0bbd7975.css",
-    "static/js/main.235dca12.js"
+    "static/js/main.ce3aa9f5.js"
   ]
 }
