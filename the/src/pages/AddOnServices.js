@@ -3,6 +3,7 @@ import SaunaImage from "../images/sauna.jpeg";
 import RedlightImage from "../images/redlight.jpeg";
 import VibrationTherapyImage from "../images/VibrationTherapyImage.jpeg";
 import "./AddonServices.css"; // Import CSS file
+import BootImage from "../images/bootimage.jpeg";
 
 const AddonServices = () => {
   return (
@@ -80,6 +81,20 @@ const AddonServices = () => {
           alt="Vibration Therapy"
           className="addon-service-image"
         />
+      </section>
+      <section className="addon-service last-addon-service">
+        <h3 className="addon-service-header">Air Compression Leg Massage</h3>
+
+        <img
+          src={BootImage}
+          alt="Air Compression Leg Massage"
+          className="addon-service-image"
+        />
+        <p className="addon-service-description">
+          Air Compression Leg Massage The air compression leg massager provides
+          cyclic air compression around your calves and feet, loosening stiff
+          muscles, relieving fatigue and improving blood circulation.
+        </p>
       </section>
 
       {/* BOOK NOW Button with Inline Styles */}

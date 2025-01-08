@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import SmilePerfected from "./pages/SmilePerfected";
 import AddonServices from "./pages/AddonServices";
+import Postcare from "./pages/PostCare";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/services/body-sculpting" element={<BodySculpting />} />
         <Route path="/services/smile-perfected" element={<SmilePerfected />} />
         <Route path="/services/add-on-services" element={<AddonServices />} />
+        <Route path="/services/postcare" element={<Postcare />} />
 
         {/*Direct Routes for Body Sculpting individual pages */}
         <Route path="/emszero" element={<EmsZero />} />
