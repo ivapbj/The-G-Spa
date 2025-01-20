@@ -29,8 +29,8 @@ const Home = () => {
         {/* First row of images */}
         <div className="row">
           <img
-            className="collage1"
-            src={Collage1}
+            className="BA30"
+            src={BA30}
             alt="Before and after torso"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
@@ -41,8 +41,8 @@ const Home = () => {
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
-            className="BA30"
-            src={BA30}
+            className="collage5"
+            src={Collage5}
             alt="Before and after teeth"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
@@ -57,8 +57,8 @@ const Home = () => {
             onClick={handleImageClick} // Add onClick handler to navigate
           />
           <img
-            className="collage5"
-            src={Collage5}
+            className="collage1"
+            src={Collage1}
             alt="Before and after butt"
             onClick={handleImageClick} // Add onClick handler to navigate
           />
